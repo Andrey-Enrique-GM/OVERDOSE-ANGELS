@@ -134,7 +134,77 @@ label a1c1:
     scene computadora
     with dissolve
 
-    # Aqui estara el tutorial de la computadora, donde el jugador aprende a usar las funciones básicas del juego
+    "Me desplomo en la silla giratoria. El cuero agrietado protesta bajo mi peso."
+    "Acerco la mano al botón de encendido del gabinete. El monitor parpadea, arrojando una luz blanca y fría directo a mis ojos cansados."
+
+    # Sonido de inicio de sistema
+    play sound "audio/sfx/sys_startup.wav"
+
+    "La pantalla de carga de 'DokiWave OS' se despliega. Interfaces color pastel, tipografías infantiles... clasico."
+
+    yamada "¡Listo! Ese es nuestro panel central. El director hizo que actualizaran el software para que sea más... 'eficiente'."
+    yamada "Desde aquí vas a controlar absolutamente todo lo relacionado con tu primer talento."
+    yamada "Por ahora el sistema está en modo de simulación. Puedes probarlo para que te acostumbres a la interfaz."
+
+    mutou "Fabuloso. Más números que exprimir..."
+
+    yamada "¡Jeje! Bueno, hablando de números, presentate mañana en mi oficina, te presentare a alguna de las chicas que tenemos en la agencia."
+    yamada "Yo me retiro por hoy. Te dejé las credenciales de administrador en el escritorio. ¡Nos vemos mañana, Mutou!"
+
+    "Los pasos de Yamada se alejan por el pasillo."
+    "Me quedo solo en la oficina, contemplando el panel de control. Las barras de estadísticas parpadean en un bucle infinito, esperando a su primera víctima."
+    "O a su primer milagro. Ya ni siquiera sé qué es lo que busco."
+
+    mutou "Es hora de probar el Angel System..."
+    mutou "Quizá haga unas tres pruebas para recordar cómo funciona esto..."
+
+    # Invocamos la pantalla en la carpeta de screens
+    call screen angel_system_panel("Sumi")
+    call screen angel_system_panel("Sumi")
+    call screen angel_system_panel("Sumi")
+    
+    # Capturamos la decisión del backend
+    $ decision_del_dia = _return
+
+    if decision_del_dia == "stream":
+        "..."
+    elif decision_del_dia == "descanso":
+        "..."
+
+    "Bueno, eso fue suficiente."
+    "Vaya simulación... me trae recuerdos..."
+
+    scene oficina
+    with dissolve
+
+    mutou "Hora de volver a casa. Mañana será un día largo..."
+    mutou "Espero que haya buenas opciones mañana."
+
+    scene black
+    with fade
+
+    "Día 0 terminado."
+
+    # --- PANTALLA DE LA CITA ---
+    # Pausa dramática en negro
+    with Pause(1.5)
+
+    # Ocultamos la ventana de diálogo por completo
+    window hide
+
+    # Muestra la cita centrada en la pantalla usando texto con estilo
+    show text "{i}\"Ahí donde el Estado termina, comienza el hombre que no es superfluo; ahí comienza el canto de los necesarios, la melodía única e insustituible.\"{/i}\n\n-- Friedrich Nietzsche, {i}Así habló Zaratustra{/i} (1883)." at truecenter with dissolve
+    
+    # El juego espera un clic del jugador para continuar de manera reflexiva
+    with Pause(4.5)
+    $ renpy.say(None, " ") # Espera un clic invisible sobre la cita
+
+    # Desvanecido final para limpiar la pantalla
+    hide text with dissolve
+    with Pause(1.0)
+
+    # Volvemos a mostrar la ventana
+    window auto
 
     # Salto hacia el siguiente capitulo
     jump a1c2
