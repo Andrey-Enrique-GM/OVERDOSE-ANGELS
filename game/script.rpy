@@ -8,9 +8,13 @@ define akira = Character("Akira", color="#00d6f7")
 default dinero = 1000
 default estres = 0
 
+# Aqui se definen las variables de puntos de los personajes, que se usan para controlar el flujo de la historia
 default pts_akira = 0
 default pts_akira2 = 0
 default pts_akira3 = 0
+
+# Aqui se define la fuente que se usará en el juego
+define gui.playtime_font = "gui/fonts/playtime.ttf" 
 
 
 
