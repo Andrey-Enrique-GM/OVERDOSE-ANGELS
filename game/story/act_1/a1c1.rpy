@@ -55,13 +55,14 @@ label a1c1:
     "No sabe nada de lo que pasó."
     "No sabe nada de lo que me pasó a mí."
     "..."
-
     "¿Como voy a lidiar con ella?"
+
     menu:
         "Decirle la verdad.":
             "¿Decirle la verdad?"
             "¿En serio?"
             "Si, claro."
+
         "Mentir y decir que fue por dinero.":
             "¿En serio?"
             "¿Desde cuando es que miento si no es necesario?"
@@ -185,24 +186,24 @@ label a1c1:
 
     "Día 0 terminado."
 
+    # ------------------------------------------------------------------------------------------------------
     # --- PANTALLA DE LA CITA ---
+    # ------------------------------------------------------------------------------------------------------
+
     # Pausa dramática en negro
     with Pause(1.5)
-
     # Ocultamos la ventana de diálogo por completo
     window hide
 
     # Muestra la cita centrada en la pantalla usando texto con estilo
+    # Una cita sobre la responsabilidad del individuo y la sociedad de Friedrich Nietzsche
     show text "{i}\"Ahí donde el Estado termina, comienza el hombre que no es superfluo; ahí comienza el canto de los necesarios, la melodía única e insustituible.\"{/i}\n\n-- Friedrich Nietzsche, {i}Así habló Zaratustra{/i} (1883)." at truecenter with dissolve
-    
-    # El juego espera un clic del jugador para continuar de manera reflexiva
-    with Pause(4.5)
-    $ renpy.say(None, " ") # Espera un clic invisible sobre la cita
+    # El juego se pausa hasta que el jugador presione un botón para continuar
+    $ renpy.pause()
 
     # Desvanecido final para limpiar la pantalla
     hide text with dissolve
     with Pause(1.0)
-
     # Volvemos a mostrar la ventana
     window auto
 
