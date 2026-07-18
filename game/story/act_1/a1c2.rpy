@@ -85,20 +85,24 @@ label a1c2:
     "Tengo que ser meticuloso. Debo elegir basándome en lo que realmente busco en este regreso..."
 
     menu:
-        "Me atrae el carisma enérgico y la disposición a destacar. (Perfil: Chica 1)":
-            $ pts_akira += 1
-            "La primera chica... Su perfil dice que no le teme a las cámaras y busca atención desesperadamente."
-            "Es el lienzo perfecto para crear un fenómeno de masas... o una tragedia comercial."
+        "Me atrae el carisma enérgico y la disposición a destacar. (Airi)":
+            $ pts_airi += 1
+            "Airi... Shirayuki..."
+            "Ya tiene una base estética impecable... justo lo que buscaba."
+            "Tiene buena cara, ahorrará tiempo en producción, directo a generar ingresos."
 
-        "Prefiero un perfil más reservado, alguien que requiera control absoluto. (Perfil: Chica 2)":
-            $ pts_akira2 += 1
-            "La segunda chica... Parece moldeable."
-            "Menos resistencia al principio, más fácil de dirigir bajo mis propios términos."
+        "Prefiero un perfil más reservado, alguien que requiera control absoluto. (Ruka)":
+            $ pts_ruka += 1
+            "Ruka... ¿Kurogane?"
+            "Parece algo cohibida... aunque sus numeros..."
+            "Tiene un buen perfil, no sera un problema que obtenga fans."
 
-        "Busco a alguien que ya tenga una fachada perfecta, lista para ser explotada. (Perfil: Chica 3)":
-            $ pts_akira3 += 1
-            "La tercera opción... Ya tiene una base estética impecable."
-            "Ahorrará tiempo en producción, directo a generar ingresos."
+        "Busco a alguien que ya tenga una fachada perfecta, lista para ser explotada. (Uta)":
+            $ pts_uta += 1
+            "Uta Tsukuyomi..."
+            "Segun su perfil parece algo problematica para controlar..."
+            "Solamente quiere crear arte, no le parece importar mucho la industria..."
+            
 
     mutou "Suficiente..."
 
