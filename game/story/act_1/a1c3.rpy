@@ -10,5 +10,5 @@ label a1c3:
     airi "Acto 1"
     airi "Capítulo 3"
     
-    # Salto hacia el siguiente acto
-    jump a2c1
+    # Salto hacia el siguiente acto, el de Airi (provisional)
+    jump a2c1_airi

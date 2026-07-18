@@ -85,19 +85,19 @@ label a1c2:
     "Tengo que ser meticuloso. Debo elegir basándome en lo que realmente busco en este regreso..."
 
     menu:
-        "Me atrae el carisma enérgico y la disposición a destacar. (Airi)":
+        "Alguien que ya tenga una fachada perfecta, lista para empezar a trabajar. (Airi)":
             $ pts_airi += 1
             "Airi... Shirayuki..."
             "Ya tiene una base estética impecable... justo lo que buscaba."
             "Tiene buena cara, ahorrará tiempo en producción, directo a generar ingresos."
 
-        "Prefiero un perfil más reservado, alguien que requiera control absoluto. (Ruka)":
+        "Estaria bien que tuviera ya un buen perfil, alguien que ya tenga cierta fama. (Ruka)":
             $ pts_ruka += 1
             "Ruka... ¿Kurogane?"
             "Parece algo cohibida... aunque sus numeros..."
             "Tiene un buen perfil, no sera un problema que obtenga fans."
 
-        "Busco a alguien que ya tenga una fachada perfecta, lista para ser explotada. (Uta)":
+        "Prefiero un perfil más reservado, alguien que requiera control absoluto. (Uta)":
             $ pts_uta += 1
             "Uta Tsukuyomi..."
             "Segun su perfil parece algo problematica para controlar..."
@@ -128,8 +128,8 @@ label a1c2:
     "Todo es mi culpa."
     "El algoritmo sigue hambriento."
 
-    # Sonido de golpe
-    # play sound "audio/sfx/despertar_golpe.wav"
+    # Sonido de latidos
+    play sound "audio/sfx/heart_echo.wav"
     scene black with hpunch # Sacudida de pantalla por el susto
     
     "¡...!"

@@ -1,4 +1,4 @@
-label a2c1:
+label a2c1_airi:
 
     hide akira-feliz
     show akira-confundida
