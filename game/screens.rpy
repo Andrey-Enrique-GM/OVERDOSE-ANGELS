@@ -308,8 +308,11 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Comenzar") action Start()
-
+            textbutton _("Comenzar"):
+                action Start()
+                activate_sound "audio/UI/Retro10.wav"
+            
+            
         else:
 
             textbutton _("Historial") action ShowMenu("history")

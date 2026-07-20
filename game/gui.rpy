@@ -10,7 +10,15 @@ init offset = -2
 ## establecen la anchura y altura del juego.
 init python:
     gui.init(1920, 1080)
+    import random
 
+    def play_random_ui():
+        # Genera la lista de sonidos del 1 al 12, omitiendo el 10
+        sonidos = ["audio/UI/Retro{}.wav".format(i) for i in range(1, 13) if i != 10]
+        
+        # Elige uno al azar y lo reproduce en el canal de sonido
+        renpy.sound.play(random.choice(sonidos))
+    
 ## Habilitar comprobaciones de propiedades no válidas o inestables en pantallas
 ## o transformaciones.
 define config.check_conflicting_properties = True
