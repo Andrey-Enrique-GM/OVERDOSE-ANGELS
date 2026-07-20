@@ -315,13 +315,21 @@ screen navigation():
             
         else:
 
-            textbutton _("Historial") action ShowMenu("history")
+            textbutton _("Historial"):
+                action ShowMenu("history")
+                activate_sound "audio/UI/Retro8.wav"
 
-            textbutton _("Guardar") action ShowMenu("save")
+            textbutton _("Guardar"):
+                action ShowMenu("save")
+                activate_sound "audio/UI/Retro9.wav"
 
-        textbutton _("Cargar") action ShowMenu("load")
+        textbutton _("Cargar"):
+            action ShowMenu("load")
+            activate_sound "audio/UI/Retro11.wav"
 
-        textbutton _("Opciones") action ShowMenu("preferences")
+        textbutton _("Opciones"):
+            action ShowMenu("preferences")
+            activate_sound "audio/UI/Retro10.wav"
 
         if _in_replay:
 
@@ -329,9 +337,13 @@ screen navigation():
 
         elif not main_menu:
 
-            textbutton _("Menú principal") action MainMenu()
+            textbutton _("Menú principal"):
+                action MainMenu()
+                activate_sound "audio/UI/Retro5.wav"
 
-        textbutton _("Acerca de") action ShowMenu("about")
+        textbutton _("Acerca de"):
+            action ShowMenu("about")
+            activate_sound "audio/UI/Retro10.wav"
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
