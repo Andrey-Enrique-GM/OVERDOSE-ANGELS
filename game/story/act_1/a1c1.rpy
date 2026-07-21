@@ -31,13 +31,13 @@ label a1c1:
     scene oficina
     with dissolve
     
-    show ayame-bien with easeinright
+    show yamada_basic_happy with easeinright
     
     yamada "¡Mutou! ¿De verdad eres tú?"
     yamada "¡No puedo creer que la gran agencia haya conseguido de regreso a Mutou! ¡El hombre que llevó a la cima a la mismísima...!"
     
-    hide ayame-bien
-    show ayame-neutral
+    hide yamada_basic_happy
+    show yamada_basic_smile
     
     "Le hago una seña con la mano para que guarde silencio. No me gusta que mencionen el pasado."
     "Mucho menos ese nombre..."
@@ -106,7 +106,7 @@ label a1c1:
 
     mutou "Carajo..."
 
-    hide ayame-neutral
+    hide yamada_basic_smile
 
     scene black
     with fade
@@ -120,13 +120,13 @@ label a1c1:
     
     scene oficina
 
-    show ayame-bien
+    show yamada_basic_happy
     with fade
 
     yamada "Bueno, creo que eso es todo."
     yamada "Ahora sientate e inicia sesión en la computadora."
 
-    hide ayame-bien
+    hide yamada_basic_happy
 
     # ------------------------------------------------------------------------------------------------------
     # --- ESCENA 3: Tutorial ---

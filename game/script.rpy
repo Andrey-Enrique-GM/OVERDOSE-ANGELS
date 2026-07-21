@@ -2,7 +2,10 @@
 define mutou = Character("Mutou", color="#787780")
 define yamada = Character("Yamada", color="#f95d5d")
 define ayame = Character("Ayame", color="#ff46cb")
-define airi = Character("Akira", color="#7febfc")
+
+define airi = Character("Airi", color="#7febfc")
+define ruka = Character("Ruka", color="#c551f3")
+define uta = Character("Uta", color="#b34343")
 
 #Aqui se definen las variables del juego, que se usan para controlar el flujo de la historia
 default dinero = 1000

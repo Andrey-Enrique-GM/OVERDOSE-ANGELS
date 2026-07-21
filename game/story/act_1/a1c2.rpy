@@ -10,15 +10,15 @@ label a1c2:
     "El sol de la mañana se filtra malamente a través de las persianas polvorientas de DokiWave Entertainment."
     "Mi cuerpo resiente la falta de sueño, pero el café barato de la máquina ayuda a mantener los ojos abiertos."
 
-    show ayame-bien with easeinleft
+    show yamada_basic_happy with easeinleft
 
     yamada "¡Buenos días, Mutou! ¡Llegas justo a tiempo!"
     yamada "El director me pidió que te entregara esto de inmediato. Son los perfiles de los nuevos talentos que acaban de firmar con la agencia."
 
     "Yamada me extiende una carpeta de color beige. Pesa más de lo que me gustaría."
 
-    hide ayame-bien
-    show ayame-neutral
+    hide yamada_basic_happy
+    show yamada_basic_smile
 
     yamada "Son tres chicas en total. Las llaman el 'Angels Proyect'."
     yamada "El director dice que tienen un potencial masivo para el algoritmo actual, pero necesitan un mánager con mano de hierro para moldearlas."
@@ -47,18 +47,18 @@ label a1c2:
     "El humo del cigarrillo flotando en el aire de la noche, disipándose lentamente bajo la luna."
     "Ayame estaba a mi lado, mirando el horizonte de la ciudad con esos ojos cansados pero extrañamente pacíficos."
     
-    show ayame-neutral with dissolve
+    show yamada_basic_smile with dissolve
     
     ayame "Mutou... sé que esta industria te vuelve loco."
     ayame "Sé que a veces sientes que solo destruimos cosas."
     ayame "Pero recuerda: el monstruo solo tiene el poder que tú le otorgues. Al final del día, cuando apagas el monitor, tú decides quién eres en la oscuridad."
     
-    hide ayame-neutral with dissolve
+    hide yamada_basic_smile with dissolve
     with Pause(0.5)
 
     # Regreso al presente
     scene oficina with dissolve
-    show ayame-neutral
+    show yamada_basic_smile
 
     "El recuerdo de sus palabras actúa como un freno de mano en mi cabeza. Mi respiración se estabiliza. Cierro la carpeta de golpe."
 
@@ -69,7 +69,7 @@ label a1c2:
 
     yamada "Oh, entiendo. ¡Los genios necesitan su espacio! Está bien, llévatelos. ¡Descansa, Mutou!"
 
-    hide ayame-neutral with easeoutleft
+    hide yamada_basic_smile with easeoutleft
 
     # ------------------------------------------------------------------------------------------------------
     # --- ESCENA 3: En casa ---
