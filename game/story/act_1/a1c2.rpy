@@ -4,8 +4,7 @@ label a1c2:
     # --- ESCENA 1: Presentación de los nuevos talentos ---
     # ------------------------------------------------------------------------------------------------------
 
-    scene oficina
-    with fade
+    scene oficina with fade
 
     "El sol de la mañana se filtra malamente a través de las persianas polvorientas de DokiWave Entertainment."
     "Mi cuerpo resiente la falta de sueño, pero el café barato de la máquina ayuda a mantener los ojos abiertos."
@@ -39,8 +38,7 @@ label a1c2:
 
     "El peso de los papeles me oprime el pecho. De repente, el olor a encierro de la oficina me transporta a otro lugar..."
     
-    scene black with dissolve
-    with Pause(0.5)
+    scene black with dissolve with Pause(0.5)
     
     # Flashback con Ayame
     "Recuerdo el piso 3. El frío de la barandilla de metal en la zona de fumadores."
@@ -53,8 +51,7 @@ label a1c2:
     ayame "Sé que a veces sientes que solo destruimos cosas."
     ayame "Pero recuerda: el monstruo solo tiene el poder que tú le otorgues. Al final del día, cuando apagas el monitor, tú decides quién eres en la oscuridad."
     
-    hide yamada_basic_smile with dissolve
-    with Pause(0.5)
+    hide yamada_basic_smile with dissolve with Pause(0.5)
 
     # Regreso al presente
     scene oficina with dissolve
@@ -117,8 +114,7 @@ label a1c2:
     # --- ESCENA 4: Recuerdos del pasado ---
     # ------------------------------------------------------------------------------------------------------
 
-    scene black with fade
-    with Pause(2.0)
+    scene black with fade with Pause(2.0)
 
     "El silencio de la noche es interrumpido por un eco ensordecedor."
     "El sonido distorsionado de miles de notificaciones en un teléfono."
