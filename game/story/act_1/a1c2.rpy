@@ -38,7 +38,8 @@ label a1c2:
 
     "El peso de los papeles me oprime el pecho. De repente, el olor a encierro de la oficina me transporta a otro lugar..."
     
-    scene black with dissolve 
+    scene black with dissolve
+    
     with Pause(0.5)
     
     # Flashback con Ayame
@@ -52,7 +53,8 @@ label a1c2:
     ayame "Sé que a veces sientes que solo destruimos cosas."
     ayame "Pero recuerda: el monstruo solo tiene el poder que tú le otorgues. Al final del día, cuando apagas el monitor, tú decides quién eres en la oscuridad."
     
-    hide yamada_basic_smile with dissolve 
+    hide yamada_basic_smile with dissolve
+    
     with Pause(0.5)
 
     # Regreso al presente
@@ -116,7 +118,8 @@ label a1c2:
     # --- ESCENA 4: Recuerdos del pasado ---
     # ------------------------------------------------------------------------------------------------------
 
-    scene black with fade 
+    scene black with fade
+    
     with Pause(2.0)
 
     "El silencio de la noche es interrumpido por un eco ensordecedor."
