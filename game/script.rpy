@@ -7,6 +7,8 @@ define airi = Character("Airi", color="#7febfc")
 define ruka = Character("Ruka", color="#c551f3")
 define uta = Character("Uta", color="#b34343")
 
+define unknown = Character("???", color="#787780")
+
 #Aqui se definen las variables del juego, que se usan para controlar el flujo de la historia
 default dinero = 1000
 default estres = 0

@@ -4,16 +4,14 @@ label a1c1:
     # --- ESCENA 1: Flashback ---
     # ------------------------------------------------------------------------------------------------------
 
-    scene exterior
-    with fade
+    scene exterior with fade
     
     "El flash de las cámaras. El sonido de la lluvia golpeando los paraguas negros."
     "Los titulares de las noticias decían que fue un 'trágico final', el precio de la fama."
     "Pero yo estuve ahí. Yo construí a ese 'Angel'. Y vi cómo el algoritmo se alimentó de sus restos hasta dejarla vacía."
     "Prometí que nunca volvería a pasar por esto. Prometí que la industria no me quitaría nada más..."
     
-    scene black
-    with fade
+    scene black with fade
 
     "Cinco años después."
     
@@ -21,15 +19,13 @@ label a1c1:
     # --- ESCENA 2: Yamada ---
     # ------------------------------------------------------------------------------------------------------
 
-    scene computadora
-    with fade
+    scene computadora with fade
     
     "El zumbido del monitor de mi computadora es lo único que llena la pequeña oficina de DokiWave Entertainment."
     "Un espacio pequeño, luces de neón baratas parpadeando en la esquina, y un contrato sobre el escritorio."
     "Alguien interrumpe mi tranquilidad."
 
-    scene oficina
-    with dissolve
+    scene oficina with dissolve
     
     show yamada_basic_happy with easeinright
     
@@ -108,8 +104,7 @@ label a1c1:
 
     hide yamada_basic_smile
 
-    scene black
-    with fade
+    scene black with fade
 
     "Después de unos minutos que se sintieron como horas, Yamada terminó de hablar de imagen de la marca 'Angels'."
     "Honestamente, no me podría importar menos. Por lo que ignoro sus palabras la mayor parte del tiempo."
@@ -120,8 +115,7 @@ label a1c1:
     
     scene oficina
 
-    show yamada_basic_happy
-    with fade
+    show yamada_basic_happy with fade
 
     yamada "Bueno, creo que eso es todo."
     yamada "Ahora sientate e inicia sesión en la computadora."
@@ -132,8 +126,7 @@ label a1c1:
     # --- ESCENA 3: Tutorial ---
     # ------------------------------------------------------------------------------------------------------
 
-    scene computadora
-    with dissolve
+    scene computadora with dissolve
 
     "Me desplomo en la silla giratoria. El cuero agrietado protesta bajo mi peso."
     "Acerco la mano al botón de encendido del gabinete. El monitor parpadea, arrojando una luz blanca y fría directo a mis ojos cansados."
@@ -175,14 +168,12 @@ label a1c1:
     "Bueno, eso fue suficiente."
     "Vaya simulación... me trae recuerdos..."
 
-    scene oficina
-    with dissolve
+    scene oficina with dissolve
 
     mutou "Hora de volver a casa. Mañana será un día largo..."
     mutou "Espero que haya buenas opciones mañana."
 
-    scene black
-    with fade
+    scene black with fade
 
     "Día 0 terminado."
 
