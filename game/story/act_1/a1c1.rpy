@@ -59,11 +59,13 @@ label a1c1:
 
     menu:
         "Decirle la verdad.":
+            play sound "audio/UI/Retro5.wav"
             "¿Decirle la verdad?"
             "¿En serio?"
             "Si, claro."
 
         "Mentir y decir que fue por dinero.":
+            play sound "audio/UI/Retro5.wav"
             "¿En serio?"
             "¿Desde cuando es que miento si no es necesario?"
             "Bueno, tampoco es que me importe."

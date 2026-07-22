@@ -86,18 +86,21 @@ label a1c2:
 
     menu:
         "Alguien que ya tenga una fachada perfecta, lista para empezar a trabajar. (Airi)":
+            play sound "audio/UI/Retro5.wav"
             $ pts_airi += 1
             "Airi... Shirayuki..."
             "Ya tiene una base estética impecable... justo lo que buscaba."
             "Tiene buena cara, ahorrará tiempo en producción, directo a generar ingresos."
 
         "Estaria bien que tuviera ya un buen perfil, alguien que ya tenga cierta fama. (Ruka)":
+            play sound "audio/UI/Retro5.wav"
             $ pts_ruka += 1
             "Ruka... ¿Kurogane?"
             "Parece algo cohibida... aunque sus numeros..."
             "Tiene un buen perfil, no sera un problema que obtenga fans."
 
         "Prefiero un perfil más reservado, alguien que requiera control absoluto. (Uta)":
+            play sound "audio/UI/Retro5.wav"
             $ pts_uta += 1
             "Uta Tsukuyomi..."
             "Segun su perfil parece algo problematica para controlar..."

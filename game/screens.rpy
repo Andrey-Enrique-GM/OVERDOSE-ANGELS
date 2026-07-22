@@ -348,7 +348,9 @@ screen navigation():
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## La ayuda no es necesaria ni relevante en dispositivos móviles.
-            textbutton _("Ayuda") action ShowMenu("help")
+            textbutton _("Ayuda"):
+                action ShowMenu("help")
+                activate_sound "audio/UI/Retro5.wav"
 
         if renpy.variant("pc"):
 
