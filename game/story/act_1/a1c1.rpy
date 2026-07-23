@@ -114,18 +114,76 @@ label a1c1:
     "Recuerdo que hace cinco años, la zona de fumadores estaba en el piso 3, justo al lado de la oficina de producción."
     "Ayame y yo pasábamos horas ahí, fumando y hablando de casi cualquier cosa."
     "..."
+
+    # ------------------------------------------------------------------------------------------------------
+    # --- ESCENA 3: Airi ---
+    # ------------------------------------------------------------------------------------------------------
     
     scene oficina
 
     show yamada_basic_happy with fade
 
     yamada "Bueno, creo que eso es todo."
+    yamada "Pero antes, quisiera presentarte a alguien..."
+
+    "Me quedo confundido, ¿Alguien? ¿Quien podria ser yo que no conozca de antes?"
+    "A menos que sea... claro."
+
+    hide yamada_basic_happy
+    show yamada_basic_confused
+
+    yamada "Eh..."
+    yamada "Tal parece que ahora mismo no esta... disponible."
+
+    mutou "Ya veo... ¿Siempre es asi?"
+
+    yamada "No, no, no, para nada... solo en unas pocas ocaciones..."
+    
+    "Pocas ocaciones = Todo el tiempo"
+
+    hide yamada_basic_confused
+    show yamada_basic_smile
+
+    yamada "Pero no estamos para hablar de eso, ella es Airi, Airi Shirayuki."
+    yamada "¿Te suena?"
+
+    mutou "Ni un poco."
+
+    hide yamada_basic_smile
+    show yamada_basic_confused
+
+    yamada "Oh..."
+
+    hide yamada_basic_confused
+    show yamada_basic_smile
+
+    yamada "Bueno, Airi es una gran promesa para el proyecto Angels, seguro ella podra ser la nueva gran estrella."
+    
+    "Yamada me extiende una carpeta, dentro de este vienen unos cuantos papeles con cantidades y graficos."
+    "Todo excelente y en un gran crecimiento. Todo respecto al perfil de Airi Shirayuki."
+
+    yamada "Como puedes ver, esta chica tiene un gran perfil ya construido gracias a las redes sociales."
+    yamada "A todos les gustan las chicas lindas~"
+    yamada "Es una pena terrible que ella no pueda estar presenta ahora mismo, pero te aseguro que te caera bien."
+
+    mutou "Entiendo, en otra oportunidad podre conocerla entonces..."
+
+    yamada "Si, asi es..."
+
+    hide yamada_basic_smile
+    show yamada_basic_happy
+
+    yamada "Puedes llevarte la carpeta contigo, tiene bastantes datos que podrian interesarte."
+
+    mutou "De acuerdo, mas tarde les dare un vistazo mas detenidamente."
+
+    yamada "Muy bien. Pasemos con una pequeña practica solo para que recuerdes el uso de 'DokiWave OS'."
     yamada "Ahora sientate e inicia sesión en la computadora."
 
     hide yamada_basic_happy
 
     # ------------------------------------------------------------------------------------------------------
-    # --- ESCENA 3: Tutorial ---
+    # --- ESCENA 4: Tutorial ---
     # ------------------------------------------------------------------------------------------------------
 
     scene computadora with dissolve
