@@ -28,6 +28,7 @@ label a1c3:
 
     menu:
         "Encenderle el cigarrillo.":
+            play sound "audio/UI/Retro5.wav"
             $ pts_uta += 1
             "Hago chasquear el encendedor, protegiendo la pequeña llama con la palma de mi mano."
             "Ella da un paso adelante, se inclina ligeramente y acerca la punta de su cigarrillo a la llama."
@@ -37,6 +38,7 @@ label a1c3:
             mutou "No hay de qué."
 
         "Pasarle el encendedor para que ella misma lo haga.":
+            play sound "audio/UI/Retro5.wav"
             "Le extiendo el encendedor de metal en la palma de mi mano."
             "Ella lo toma sin decir nada. Sus dedos rozan los míos por un instante; están fríos."
             "Hace chispear la piedra, enciende su cigarrillo y me devuelve el encendedor."
@@ -121,17 +123,20 @@ label a1c3:
 
     menu:
         "Invertir la mayor parte del presupuesto en la campaña publicitaria y marketing algorítmico.":
+            play sound "audio/UI/Retro5.wav"
             $ pts_airi += 1
             "Si queremos números rápidos, la imagen lo es todo."
             "El algoritmo favorece la visibilidad agresiva sobre la sustancia."
             "Maximizar la presencia en redes desde el día uno."
 
         "Asignar los recursos a la producción musical y entrenamiento técnico.":
+            play sound "audio/UI/Retro5.wav"
             $ pts_uta += 1
             "La fachada no durará si el producto de fondo es mediocre."
             "Es mejor construir una base artística sólida, aunque el crecimiento sea más lento al principio."
 
         "Priorizar la seguridad, moderación de comunidad y bienestar de las chicas.":
+            play sound "audio/UI/Retro5.wav"
             $ pts_ruka += 1
             "Conozco los riesgos de esta industria. Proteger el entorno del talento evitará crisis a largo plazo."
             "Minimizar la exposición tóxica antes de que el público empiece a consumir sus vidas."
