@@ -116,7 +116,7 @@ label a1c1:
     "..."
 
     # ------------------------------------------------------------------------------------------------------
-    # --- ESCENA 3: Airi ---
+    # --- ESCENA 3: Airi Shirayuki ---
     # ------------------------------------------------------------------------------------------------------
     
     scene oficina
@@ -126,25 +126,25 @@ label a1c1:
     yamada "Bueno, creo que eso es todo."
     yamada "Pero antes, quisiera presentarte a alguien..."
 
-    "Me quedo confundido, ¿Alguien? ¿Quien podria ser yo que no conozca de antes?"
+    "Me quedo confundido. ¿Alguien? ¿Quién podría ser que yo no conozca de antes?"
     "A menos que sea... claro."
 
     hide yamada_basic_happy
     show yamada_basic_confused
 
     yamada "Eh..."
-    yamada "Tal parece que ahora mismo no esta... disponible."
+    yamada "Tal parece que ahora mismo no está... disponible."
 
-    mutou "Ya veo... ¿Siempre es asi?"
+    mutou "Ya veo... ¿Siempre es así?"
 
-    yamada "No, no, no, para nada... solo en unas pocas ocaciones..."
-    
-    "Pocas ocaciones = Todo el tiempo"
+    yamada "No, no, no, para nada... Solo en unas pocas ocasiones..."
+
+    "Pocas ocasiones = Todo el tiempo."
 
     hide yamada_basic_confused
     show yamada_basic_smile
 
-    yamada "Pero no estamos para hablar de eso, ella es Airi, Airi Shirayuki."
+    yamada "Pero no estamos para hablar de eso. Ella es Airi, Airi Shirayuki."
     yamada "¿Te suena?"
 
     mutou "Ni un poco."
@@ -157,28 +157,28 @@ label a1c1:
     hide yamada_basic_confused
     show yamada_basic_smile
 
-    yamada "Bueno, Airi es una gran promesa para el proyecto Angels, seguro ella podra ser la nueva gran estrella."
-    
-    "Yamada me extiende una carpeta, dentro de este vienen unos cuantos papeles con cantidades y graficos."
+    yamada "Bueno, Airi es una gran promesa para el proyecto Angels. Seguro ella podría ser la nueva gran estrella."
+
+    "Yamada me extiende una carpeta de color beige; dentro de esta vienen unos cuantos papeles con cantidades y gráficos."
     "Todo excelente y en un gran crecimiento. Todo respecto al perfil de Airi Shirayuki."
 
     yamada "Como puedes ver, esta chica tiene un gran perfil ya construido gracias a las redes sociales."
     yamada "A todos les gustan las chicas lindas~"
-    yamada "Es una pena terrible que ella no pueda estar presenta ahora mismo, pero te aseguro que te caera bien."
+    yamada "Es una pena terrible que ella no pueda estar presente ahora mismo, pero te aseguro que te caerá bien."
 
-    mutou "Entiendo, en otra oportunidad podre conocerla entonces..."
+    mutou "Entiendo. En otra oportunidad podré conocerla entonces..."
 
-    yamada "Si, asi es..."
+    yamada "Sí, así es..."
 
     hide yamada_basic_smile
     show yamada_basic_happy
 
-    yamada "Puedes llevarte la carpeta contigo, tiene bastantes datos que podrian interesarte."
+    yamada "Puedes llevarte la carpeta contigo, tiene bastantes datos que podrían interesarte."
 
-    mutou "De acuerdo, mas tarde les dare un vistazo mas detenidamente."
+    mutou "De acuerdo, más tarde les daré un vistazo más detenidamente."
 
-    yamada "Muy bien. Pasemos con una pequeña practica solo para que recuerdes el uso de 'DokiWave OS'."
-    yamada "Ahora sientate e inicia sesión en la computadora."
+    yamada "Muy bien. Pasemos con una pequeña práctica solo para que recuerdes el uso de 'DokiWave OS'."
+    yamada "Ahora siéntate e inicia sesión en la computadora."
 
     hide yamada_basic_happy
 

@@ -12,9 +12,9 @@ label a1c2:
     show yamada_basic_happy with easeinleft
 
     yamada "¡Buenos días, Mutou! ¡Llegas justo a tiempo!"
-    yamada "El director me pidió que te entregara esto de inmediato. Son los perfiles de los nuevos talentos que acaban de firmar con la agencia."
+    yamada "El director me pidió que te entregara esto de inmediato. Son los perfiles de los nuevos talentos de la agencia."
 
-    "Yamada me extiende una carpeta de color beige. Pesa más de lo que me gustaría."
+    "Yamada me extiende otra carpeta de color beige. Pesa más de lo que me gustaría."
 
     hide yamada_basic_happy
     show yamada_basic_smile
@@ -24,18 +24,137 @@ label a1c2:
 
     mutou "Mano de hierro... Entiendo."
 
+    hide yamada_basic_smile
+
     "Abro la carpeta sobre el escritorio. Tres fotografías, tres nombres, tres vidas resumidas en hojas de datos estadísticos."
     "Tres chicas cuyos nombres apenas registro en este momento."
     "Las miro fijamente."
-    "¿Angeles? Qué maldito chiste."
+    "¿Angels? Qué maldito chiste."
     "Miro sus rostros sonrientes en las fotos. Inocentes. Ambiciosas. Ignorantes del matadero al que acaban de entrar."
     "Me pregunto... ¿A quién de ellas le voy a desgraciar la vida esta vez?"
     "¿A quién voy a exprimir hasta que no quede nada más que una carcasa vacía en nombre del maldito dinero?"
 
     # ------------------------------------------------------------------------------------------------------
-    # --- ESCENA 2: Ayame ---
+    # --- ESCENA 2: Ruka Kurogane ---
     # ------------------------------------------------------------------------------------------------------
 
+    "Soy interrumpido por la plática de Yamada detrás de mí."
+
+    yamada "Claro, aquí está el..."
+    yamada "¿Eh? ¿Lo quieres ver? ¿Justo ahora?"
+    yamada "Eh... no sé si sea un buen momento, justo ahora él está revisando tu expediente..."
+
+    "Suficiente. Está hablando de mí, pero ¿con quién?"
+    "Rápidamente cierro la carpeta y me pongo de pie, dándome la vuelta en el proceso."
+    "Justo al hacerlo, noto que hay alguien más fuera de la oficina."
+
+    show yamada_basic_confused at left
+    show ruka_basic_neutral at right
+
+    "Tiene un aspecto bastante llamativo, ¿será que ella es...?"
+
+    ruka "¿Qué tal? Soy Ruka."
+
+    "Sí, es Ruka Kurogane."
+
+    mutou "Por lo que veo ya me conoces, ¿me equivoco?"
+
+    hide ruka_basic_neutral
+    show ruka_basic_happy at right
+    hide yamada_basic_confused
+    show yamada_basic_happy at left
+
+    yamada "Ella es Ruka Kurogane. Quizá alcanzaste a darle un vistazo a su perfil."
+    yamada "Tiene una gran trayectoria construida por su cuenta. Ella es..."
+
+    hide yamada_basic_happy
+    show yamada_basic_confused at left
+
+    ruka "Soy streamer. Bueno, quizá no como las chicas con las que tú sueles trabajar..."
+
+    "¿Tú? Tiene demasiada confianza o un nulo respeto por sus superiores."
+
+    hide ruka_basic_happy
+    show ruka_basic_neutral at right
+
+    ruka "Yo hago streams de videojuegos, no me grabo maquillándome o haciendo ASMR o... bueno..."
+
+    hide ruka_basic_neutral
+    show ruka_basic_angry at right
+
+    ruka "Tuve una etapa."
+
+    "Impresionante."
+    "¿Acaso todas las streamers tuvieron esa 'etapa'?"
+
+    hide ruka_basic_angry
+    show ruka_basic_happy at right
+
+    ruka "Pero eso no importa, ahora soy una nueva Ruka Kurogane."
+    ruka "Bueno... mis amigos me dicen 'KuroRage'."
+
+    "¿Sus amigos? Según su expediente, se refiere como 'amigos' a sus fans."
+
+    mutou "Bueno... Ruka, fue un gusto conocerte."
+    mutou "Pero ahora mismo quisiera hablar con Yamada. A solas."
+
+    hide ruka_basic_happy
+    show ruka_basic_neutral at right
+
+    yamada "Oh... no sabía que tenían ese tipo de relación..."
+
+    with hpunch # Sacudida de pantalla
+
+    mutou "¡NO ES ESO!"
+
+    yamada "Bueno... creo que es mejor dejar la conversación por hoy, Ruka..."
+
+    hide yamada_basic_confused
+    show yamada_basic_smile at left
+
+    yamada "Puedes tomarte el resto del día libre, Ruka."
+    yamada "Siéntete libre de jugar videojuegos con tus amigos."
+
+    hide ruka_basic_neutral
+    show ruka_basic_happy at right
+
+    ruka "¡Genial!"
+    ruka "Nos vemos, señorita Yamada... Mánager."
+
+    hide ruka_basic_happy
+
+    "Con eso, finalmente se va y nos deja a solas de nuevo."
+
+    yamada "Como puedes ver... ella es un tanto... especial de tratar."
+    yamada "Tenle paciencia, es muy amigable y gentil."
+    yamada "Además, es de las favoritas para el proyecto Angels."
+    yamada "Podría ser la nueva gran estrella si sabes manejar correctamente su pasión por los videojuegos."
+
+    mutou "Entiendo..."
+
+    "A veces lo olvido: a esta industria solo le importan las posibilidades de éxito."
+    "No los culpo. Yo fui uno de ellos, después de todo."
+    "..."
+    "¿O sigo siéndolo?"
+    "No importa."
+    "Ya no importa. No creo que exista algo como la redención para mí."
+    "..."
+    "....."
+    ".........."
+
+    yamada "¿Seguimos entonces?"
+
+    "Me olvidé completamente de Yamada."
+    "Quedé totalmente sumido en mis pensamientos."
+
+    mutou "Claro, sigamos..."
+
+    # ------------------------------------------------------------------------------------------------------
+    # --- ESCENA 3: Ayame ---
+    # ------------------------------------------------------------------------------------------------------
+
+    "Tomo la carpeta y continúo donde me quedé."
+    "De fondo escucho a Yamada diciéndome datos de la empresa que claramente no me importan y olvidaré mañana mismo."
     "El peso de los papeles me oprime el pecho. De repente, el olor a encierro de la oficina me transporta a otro lugar..."
     
     scene black with dissolve
@@ -73,7 +192,7 @@ label a1c2:
     hide yamada_basic_smile with easeoutleft
 
     # ------------------------------------------------------------------------------------------------------
-    # --- ESCENA 3: En casa ---
+    # --- ESCENA 4: En casa ---
     # ------------------------------------------------------------------------------------------------------
 
     scene black with fade
@@ -97,7 +216,7 @@ label a1c2:
             play sound "audio/UI/Retro5.wav"
             $ pts_ruka += 1
             "Ruka... ¿Kurogane?"
-            "Parece algo cohibida... aunque sus numeros..."
+            "Parece algo... extraña, aunque sus numeros..."
             "Tiene un buen perfil, no sera un problema que obtenga fans."
 
         "Prefiero un perfil más reservado, alguien que requiera control absoluto. (Uta)":
@@ -115,7 +234,7 @@ label a1c2:
     "Me siento jodidamente agotado..."
 
     # ------------------------------------------------------------------------------------------------------
-    # --- ESCENA 4: Recuerdos del pasado ---
+    # --- ESCENA 5: Recuerdos del pasado ---
     # ------------------------------------------------------------------------------------------------------
 
     scene black with fade
