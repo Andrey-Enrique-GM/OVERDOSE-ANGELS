@@ -219,10 +219,10 @@ label a1c2:
             "Parece algo... extraña, aunque sus numeros..."
             "Tiene un buen perfil, no sera un problema que obtenga fans."
 
-        "Prefiero un perfil más reservado, alguien que requiera control absoluto. (Uta)":
+        "Prefiero un perfil más reservado, alguien que requiera control absoluto. (Shiori)":
             play sound "audio/UI/Retro5.wav"
-            $ pts_uta += 1
-            "Uta Tsukuyomi..."
+            $ pts_shiori += 1
+            "Shiori Sumizome..."
             "Segun su perfil parece algo problematica para controlar..."
             "Solamente quiere crear arte, no le parece importar mucho la industria..."
             

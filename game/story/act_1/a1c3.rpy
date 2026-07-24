@@ -17,6 +17,9 @@ label a1c3:
     mutou "¿Realmente voy a volver a hacer esto?"
 
     "El sonido de unos pasos ligeros rompe mi monólogo interno."
+
+    show shiori_basic_neutral
+
     "Miro de reojo. Una mujer se acerca caminando a paso lento. Lleva una bufanda grande que le cubre parte del rostro y una gorra calada hasta las cejas."
     "Se detiene a un par de metros de mí, buscando algo en sus bolsillos."
     "Extrae un cigarrillo, se lo lleva a los labios y me mira fijamente."
@@ -53,6 +56,9 @@ label a1c3:
     
     mutou "Es el mejor lugar del edificio. Nadie molesta."
 
+    hide shiori_basic_neutral
+    show shiori_basic_happy
+
     "Ella suelta una pequeña risa amarga que se pierde en una nube de humo."
 
     unknown "Tienes razón. Nadie molesta..."
@@ -62,6 +68,8 @@ label a1c3:
     unknown "Nos vemos, mánager."
 
     mutou "...?"
+
+    hide shiori_basic_happy with dissolve
 
     "Antes de que pueda preguntarle cómo sabe quién soy, la mujer se da la vuelta y camina a paso rápido hacia la salida del callejón, desapareciendo tras la esquina."
     "Me quedo solo, sosteniendo mi cigarrillo a medio consumir."
@@ -99,7 +107,7 @@ label a1c3:
 
     show yamada_basic_happy with dissolve
 
-    yamada "¡Aquí tienes! Guardé esto por si acaso. Te exigirán formalidad si vas a tomar decisiones sobre los presupuestos de las 'Angels'."
+    yamada "¡Aquí tienes! Guardé esto por si acaso. Te exigirán formalidad si vas a tomar decisiones sobre los presupuestos de las Angels."
 
     "Me entrega el saco y la corbata."
     "Suspiro con resignación."
@@ -131,7 +139,7 @@ label a1c3:
 
         "Asignar los recursos a la producción musical y entrenamiento técnico.":
             play sound "audio/UI/Retro5.wav"
-            $ pts_uta += 1
+            $ pts_shiori += 1
             "La fachada no durará si el producto de fondo es mediocre."
             "Es mejor construir una base artística sólida, aunque el crecimiento sea más lento al principio."
 
@@ -150,7 +158,7 @@ label a1c3:
     "Los ejecutivos asienten satisfechos. Para ellos, solo soy otra pieza funcional del engranaje."
 
     # ------------------------------------------------------------------------------------------------------
-    # --- ESCENA 4: Uta ---
+    # --- ESCENA 4: Shiori ---
     # ------------------------------------------------------------------------------------------------------
 
     scene oficina with fade
@@ -164,7 +172,7 @@ label a1c3:
 
     mutou "Solo les dije lo que querían escuchar..."
 
-    yamada "¡Como sea, fue fantástico! Y justo a tiempo, porque quiero presentarte oficialmente a una de las chicas del proyecto 'Angels'."
+    yamada "¡Como sea, fue fantástico! Y justo a tiempo, porque quiero presentarte oficialmente a una de las chicas del proyecto Angels."
     yamada "Ella estaba ensayando cerca."
     yamada "¡Pasa, por favor!"
 
@@ -174,49 +182,49 @@ label a1c3:
 
     hide yamada_basic_happy
     show yamada_basic_happy at left with dissolve
-    show uta_basic_neutral at right with dissolve
+    show shiori_basic_neutral at right with dissolve
 
-    yamada "Mutou, ella es Uta Tsukuyomi, una de nuestras promesas para el nuevo grupo."
-    yamada "Uta, él es Mutou, el mánager sénior que estará a cargo del proyecto."
+    yamada "Mutou, ella es Shiori Sumizome, una de nuestras promesas para el nuevo grupo."
+    yamada "Shiori, él es Mutou, el mánager sénior que estará a cargo del proyecto."
 
-    hide uta_basic_neutral
-    show uta_basic_confused at right
+    hide shiori_basic_neutral
+    show shiori_basic_confused at right
 
-    "Uta se queda helada al verme. Sus ojos se abren levemente por la sorpresa al conectar las piezas."
+    "Shiori se queda helada al verme. Sus ojos se abren levemente por la sorpresa al conectar las piezas."
     "El hombre con el traje arrugado y el encendedor en el callejón de basura es su posible nuevo mánager."
 
     mutou "..."
     
-    uta "..."
+    shiori "..."
 
     "Yo mantengo la cara completamente seria, sin revelar la más mínima emoción."
     "Ella reacciona rápido, recomponiendo su expresión neutral en una fracción de segundo."
 
-    hide uta_basic_confused
-    show uta_basic_neutral at right
+    hide shiori_basic_confused
+    show shiori_basic_neutral at right
 
     yamada "¿Eh? ¿Pasa algo? Se quedaron mirándose muy raro..."
 
-    mutou "No, nada. Mucho gusto, Uta."
+    mutou "No, nada. Mucho gusto, Shiori."
 
-    "Uta da un paso al frente y hace una leve inclinación respetuosa."
+    "Shiori da un paso al frente y hace una leve inclinación respetuosa."
 
-    uta "El gusto es mío... Mánager. Espero que podamos hacer un buen trabajo."
+    shiori "El gusto es mío... Mánager. Espero que podamos hacer un buen trabajo."
 
-    yamada "¡Excelente! Uta tiene un talento increíble para la composición, aunque a veces es bastante silenciosa..."
+    yamada "¡Excelente! Shiori tiene un talento increíble para la composición, aunque a veces es bastante silenciosa..."
 
     # Sonido de teléfono sonando
     play sound "audio/sfx/phone_ring.wav"
 
-    "El teléfono celular en el bolso de Uta empieza a vibrar, interrumpiendo a Yamada."
-    "Uta revisa la pantalla rápidamente. Su ceño se frunce por un instante."
+    "El teléfono celular en el bolso de Shiori empieza a vibrar, interrumpiendo a Yamada."
+    "Shiori revisa la pantalla rápidamente. Su ceño se frunce por un instante."
 
-    uta "Lo siento... tengo que responder esto. Es de... Lo siento."
-    uta "Con su permiso."
+    shiori "Lo siento... tengo que responder esto. Es de... Lo siento."
+    shiori "Con su permiso."
 
-    hide uta_basic_neutral with dissolve
+    hide shiori_basic_neutral with dissolve
 
-    "Uta da media vuelta y sale de la oficina a prisa mientras contesta la llamada."
+    "Shiori da media vuelta y sale de la oficina a prisa mientras contesta la llamada."
 
     hide yamada_basic_happy
     show yamada_basic_smile at left
@@ -227,7 +235,7 @@ label a1c3:
     mutou "Sí... Se nota que sabe lo que hace."
 
     "Miro hacia la puerta por donde se acaba de ir."
-    "Así que una de las 'Angels' que debo moldear es la chica que me pidió fuego esta mañana..."
+    "Así que una de las Angels que debo moldear es la chica que me pidió fuego esta mañana..."
     "El mundo en esta industria es ridículamente pequeño."
 
     mutou "Yamada, voy a quitarme esta corbata."
