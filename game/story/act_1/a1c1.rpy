@@ -8,12 +8,18 @@ label a1c1:
     
     "El flash de las cámaras. El sonido de la lluvia golpeando los paraguas negros."
     "Los titulares de las noticias decían que fue un 'trágico final', el precio de la fama."
-    "Pero yo estuve ahí. Yo construí a ese 'Angel'. Y vi cómo el algoritmo se alimentó de sus restos hasta dejarla vacía."
+    "Pero yo estuve ahí. Yo construí a esa estrella. Y vi cómo el algoritmo se alimentó de sus restos hasta dejarla vacía."
     "Prometí que nunca volvería a pasar por esto. Prometí que la industria no me quitaría nada más..."
-    
-    scene black with fade
+    "Pero..."
 
-    "Cinco años después."
+    scene black with fade
+    with Pause(1.5)
+    window hide
+    show text "Cinco años después." at truecenter with dissolve
+    $ renpy.pause()
+    hide text with dissolve
+    with Pause(1.0)
+    window auto
     
     # ------------------------------------------------------------------------------------------------------
     # --- ESCENA 2: Yamada ---
@@ -29,8 +35,8 @@ label a1c1:
     
     show yamada_basic_happy with easeinright
     
-    yamada "¡Mutou! ¿De verdad eres tú?"
-    yamada "¡No puedo creer que la gran agencia haya conseguido de regreso a Mutou! ¡El hombre que llevó a la cima a la mismísima...!"
+    unknown "¡Mutou! ¿De verdad eres tú?"
+    unknown "¡No puedo creer que la gran agencia haya conseguido de regreso a Mutou! ¡El hombre que llevó a la cima a la mismísima...!"
     
     hide yamada_basic_happy
     show yamada_basic_smile
@@ -38,13 +44,13 @@ label a1c1:
     "Le hago una seña con la mano para que guarde silencio. No me gusta que mencionen el pasado."
     "Mucho menos ese nombre..."
 
-    yamada "Oh... lo siento. No quise decir nada malo. Solo estaba emocionada de verte."
+    unknown "Oh... lo siento. No quise decir nada malo. Solo estaba emocionada de verte."
 
     mutou "..."
     mutou "No te preocupes... ya pasaron cinco años. No hay nada nuevo que lamentar."
 
-    yamada "Sí, tienes razón. Pero..."
-    yamada "¿Qué te trae de vuelta a la industria? ¿Qué te hizo volver?"
+    unknown "Sí, tienes razón. Pero..."
+    unknown "¿Qué te trae de vuelta a la industria? ¿Qué te hizo volver?"
 
     "¿Es en serio?"
     "Esta chica no tiene idea de lo que pasó."
@@ -70,8 +76,9 @@ label a1c1:
     "De nuevo, como siempre."
 
     mutou "Volví por dinero. La industria me necesita, y yo necesito dinero."
+    mutou "Ademas... no creo que haya alguien mas apto que yo para esto."
 
-    yamada "¡Eso es genial! ¡Estoy segura de que podemos hacer un gran equipo!"
+    unknown "¡Eso es genial! ¡Estoy segura de que podemos hacer un gran equipo!"
 
     mutou "..."
     mutou "Sí, seguro. Pero antes de que empecemos, ¿Quien eres?"
@@ -81,6 +88,9 @@ label a1c1:
     "Que novedad."
 
     yamada "También soy la nueva asistente de producción de DokiWave Entertainment."
+
+    "Asistente de producción..."
+    "Pero si ese es el trabajo de..."
 
     mutou "¿La nueva? ¿Qué pasó con Ayame?"
 
@@ -97,9 +107,12 @@ label a1c1:
     "Yamada me mira con una sonrisa apenada, algo anda mal."
 
     yamada "Ehm... la zona de fumadores fue cerrada hace un par de años."
-    yamada "La empresa decidió que no era saludable para los empleados y daba una mala imagen de la marca 'Angels'."
+    yamada "La empresa decidió que no era saludable para los empleados y daba una mala imagen para el estreno de la marca 'Angels'."
 
-    "'Angels'... de nuevo, quitandome mi felicidad."
+    "'Angels'... el nuevo gran proyecto de DokiWave Entertainment..."
+    "'Nuevo'"
+    "Ya todos olvidaron la desgracia en la que termino 'DokiIdols'."
+    "Claro. Ya es cosa del pasado, pero..."
     "No me importa la imagen de la marca. No me importa la salud de los empleados. Solo quiero fumar un cigarrillo."
 
     mutou "Carajo..."
@@ -108,7 +121,7 @@ label a1c1:
 
     scene black with fade
 
-    "Después de unos minutos que se sintieron como horas, Yamada terminó de hablar de imagen de la marca 'Angels'."
+    "Después de unos minutos que se sintieron como horas, Yamada terminó de hablar de la imagen de la marca Angels."
     "Honestamente, no me podría importar menos. Por lo que ignoro sus palabras la mayor parte del tiempo."
     "Aparentemente la empresa a cambiado, bastante."
     "Recuerdo que hace cinco años, la zona de fumadores estaba en el piso 3, justo al lado de la oficina de producción."
@@ -194,7 +207,7 @@ label a1c1:
     # Sonido de inicio de sistema
     play sound "audio/sfx/sys_startup.wav"
 
-    "La pantalla de carga de 'DokiWave OS' se despliega. Interfaces color pastel, tipografías infantiles... clasico."
+    "La pantalla de carga de DokiWave OS se despliega. Interfaces color pastel, tipografías infantiles... clasico."
 
     yamada "¡Listo! Ese es nuestro panel central. El director hizo que actualizaran el software para que sea más... 'eficiente'."
     yamada "Desde aquí vas a controlar absolutamente todo lo relacionado con tu primer talento."
@@ -216,6 +229,7 @@ label a1c1:
     call screen angel_system_panel("Sumi")
     call screen angel_system_panel("Sumi")
     call screen angel_system_panel("Sumi")
+    with Pause(2.0)
     
     # Capturamos la decisión del backend
     $ decision_del_dia = _return

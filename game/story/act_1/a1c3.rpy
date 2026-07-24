@@ -254,5 +254,5 @@ label a1c3:
     with Pause(1.0)
     window auto
     
-    # Salto hacia el siguiente acto, el de Airi (provisional)
-    jump a2c1_airi
+    # Salto hacia el siguiente capitulo
+    jump a1c4
