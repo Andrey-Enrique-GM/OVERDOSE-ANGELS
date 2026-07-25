@@ -218,26 +218,27 @@ label a1c2:
         "Parece algo... extraña, aunque sus numeros..."
         "Tiene un buen perfil, no sera un problema que obtenga fans."
         
-    elif _return == "shiori":
-        "Shiori Sumizome..."
+    elif _return == "kaori":
+        "Kaori Sumizome..."
         "Segun su perfil parece algo problematica para controlar..."
         "Solamente quiere crear arte, no le parece importar mucho la industria..."
 
-        "Estaria bien que tuviera ya un buen perfil, alguien que ya tenga cierta fama. (Ruka)":
+    menu:
+        "Estaría bien que tuviera ya un buen perfil, alguien que ya tenga cierta fama. (Ruka)":
             play sound "audio/UI/Retro5.wav"
             $ pts_ruka += 1
             "Ruka... ¿Kurogane?"
-            "Parece algo... extraña, aunque sus numeros..."
-            "Tiene un buen perfil, no sera un problema que obtenga fans."
+            "Parece algo... extraña, aunque sus números..."
+            "Tiene un buen perfil, no será un problema que obtenga fans."
 
         "Prefiero un perfil más reservado, alguien que requiera control absoluto. (Kaori)":
             play sound "audio/UI/Retro5.wav"
             $ pts_kaori += 1
             "Kaori Sumizome..."
-            "Segun su perfil parece algo problematica para controlar..."
+            "Según su perfil parece algo problemática para controlar..."
             "Solamente quiere crear arte, no le parece importar mucho la industria..."
             
-
+            
     mutou "Suficiente..."
 
     "Cierro los ojos, frotándome las sienes. El alcohol y el cansancio acumulado finalmente ganan la batalla."

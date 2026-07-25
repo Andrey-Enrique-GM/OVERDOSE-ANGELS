@@ -66,7 +66,7 @@ screen seleccion():
                 
                 text "Buen perfil, alguien que ya tenga cierta fama." text_align 0.5 size 20 idle_color "#cccccc" hover_color "#ffffff"
 
-        # --- Columna 3: Shiori ---
+        # --- Columna 3: Kaori ---
         button:
             at carta
             xysize (320, 500)
@@ -75,17 +75,17 @@ screen seleccion():
             hover_background Solid("#2b2b36")
             
             hovered Play("sound", "audio/UI/Retro7.wav")
-            action [Play("sound", "audio/UI/Retro5.wav"), SetVariable("pts_shiori", pts_shiori + 1), Return("shiori")]
+            action [Play("sound", "audio/UI/Retro5.wav"), SetVariable("pts_kaori", pts_kaori + 1), Return("kaori")]
             
             vbox:
                 align (0.5, 0.0)
                 spacing 15
                 
-                # cambiar despues por la silueta de Shiori
+                # cambiar despues por la silueta de Kaori
                 add Solid("#333333") xysize(280, 250) xalign 0.5 
-                # add "images/portraits/shiori.png" xalign 0.5 xysize(280, 250)
+                # add "images/portraits/kaori.png" xalign 0.5 xysize(280, 250)
                 
-                # provicional (Shiori: Morado/Lila)
-                text "Shiori" xalign 0.5 bold True size 34 idle_color "#FFFFFF" hover_color "#C277FF"
+                # provicional (Kaori: Morado/Lila)
+                text "Kaori" xalign 0.5 bold True size 34 idle_color "#FFFFFF" hover_color "#C277FF"
                 
                 text "Perfil reservado, requiere control absoluto." text_align 0.5 size 20 idle_color "#cccccc" hover_color "#ffffff"
