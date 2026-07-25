@@ -1,4 +1,4 @@
-define config.main_menu_music = "audio/songs/lofi.flac"
+define config.main_menu_music = "audio/bgm/lofi.flac"
 
 # --- EFECTOS VISUALES Y ANIMACIONES ---
 

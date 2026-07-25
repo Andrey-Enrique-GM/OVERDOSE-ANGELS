@@ -222,22 +222,6 @@ label a1c2:
         "Kaori Sumizome..."
         "Segun su perfil parece algo problematica para controlar..."
         "Solamente quiere crear arte, no le parece importar mucho la industria..."
-
-    menu:
-        "Estaría bien que tuviera ya un buen perfil, alguien que ya tenga cierta fama. (Ruka)":
-            play sound "audio/UI/Retro5.wav"
-            $ pts_ruka += 1
-            "Ruka... ¿Kurogane?"
-            "Parece algo... extraña, aunque sus números..."
-            "Tiene un buen perfil, no será un problema que obtenga fans."
-
-        "Prefiero un perfil más reservado, alguien que requiera control absoluto. (Kaori)":
-            play sound "audio/UI/Retro5.wav"
-            $ pts_kaori += 1
-            "Kaori Sumizome..."
-            "Según su perfil parece algo problemática para controlar..."
-            "Solamente quiere crear arte, no le parece importar mucho la industria..."
-            
             
     mutou "Suficiente..."
 
