@@ -110,9 +110,9 @@ label a1c2:
     yamada "Bueno... creo que es mejor dejar la conversación por hoy, Ruka..."
 
     hide yamada_basic_confused
-    show yamada_basic_smile at left
+    show yamada_basic_happy at left
 
-    yamada "Puedes tomarte el resto del día libre, Ruka."
+    yamada "Puedes tomarte el resto del día libre."
     yamada "Siéntete libre de jugar videojuegos con tus amigos."
 
     hide ruka_basic_neutral
@@ -166,13 +166,13 @@ label a1c2:
     "El humo del cigarrillo flotando en el aire de la noche, disipándose lentamente bajo la luna."
     "Ayame estaba a mi lado, mirando el horizonte de la ciudad con esos ojos cansados pero extrañamente pacíficos."
     
-    show yamada_basic_smile with dissolve
+    show ayame_basic_neutral with dissolve
     
     ayame "Mutou... sé que esta industria te vuelve loco."
     ayame "Sé que a veces sientes que solo destruimos cosas."
     ayame "Pero recuerda: el monstruo solo tiene el poder que tú le otorgues. Al final del día, cuando apagas el monitor, tú decides quién eres en la oscuridad."
     
-    hide yamada_basic_smile with dissolve
+    #hide ayame_basic_neutral with dissolve
     
     with Pause(0.5)
 
@@ -219,10 +219,10 @@ label a1c2:
             "Parece algo... extraña, aunque sus numeros..."
             "Tiene un buen perfil, no sera un problema que obtenga fans."
 
-        "Prefiero un perfil más reservado, alguien que requiera control absoluto. (Shiori)":
+        "Prefiero un perfil más reservado, alguien que requiera control absoluto. (Kaori)":
             play sound "audio/UI/Retro5.wav"
-            $ pts_shiori += 1
-            "Shiori Sumizome..."
+            $ pts_kaori += 1
+            "Kaori Sumizome..."
             "Segun su perfil parece algo problematica para controlar..."
             "Solamente quiere crear arte, no le parece importar mucho la industria..."
             

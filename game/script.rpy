@@ -5,7 +5,7 @@ define ayame = Character("Ayame", color="#ff46cb")
 
 define airi = Character("Airi", color="#7febfc")
 define ruka = Character("Ruka", color="#c551f3")
-define shiori = Character("Shiori", color="#b34343")
+define kaori = Character("Kaori", color="#b34343")
 
 define unknown = Character("???", color="#787780")
 
@@ -16,7 +16,7 @@ default estres = 0
 # Aqui se definen las variables de puntos de los personajes, que se usan para controlar el flujo de la historia
 default pts_airi = 0
 default pts_ruka = 0
-default pts_shiori = 0
+default pts_kaori = 0
 
 # Aqui se define la fuente que se usará en el juego
 define gui.playtime_font = "gui/fonts/playtime.ttf" 
