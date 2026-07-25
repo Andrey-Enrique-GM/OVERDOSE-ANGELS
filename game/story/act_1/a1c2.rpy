@@ -204,27 +204,25 @@ label a1c2:
     "Extiendo los tres expedientes frente a mí."
     "Tengo que ser meticuloso. Debo elegir basándome en lo que realmente busco en este regreso..."
 
-    menu:
-        "Alguien que ya tenga una fachada perfecta, lista para empezar a trabajar. (Airi)":
-            play sound "audio/UI/Retro5.wav"
-            $ pts_airi += 1
-            "Airi... Shirayuki..."
-            "Ya tiene una base estética impecable... justo lo que buscaba."
-            "Tiene buena cara, ahorrará tiempo en producción, directo a generar ingresos."
+    label escena_reclutamiento:
+    
+    call screen seleccion
+    
+    if _return == "airi":
+        "Airi... Shirayuki..."
+        "Ya tiene una base estética impecable... justo lo que buscaba."
+        "Tiene buena cara, ahorrará tiempo en producción, directo a generar ingresos."
+        
+    elif _return == "ruka":
+        "Ruka... ¿Kurogane?"
+        "Parece algo... extraña, aunque sus numeros..."
+        "Tiene un buen perfil, no sera un problema que obtenga fans."
+        
+    elif _return == "shiori":
+        "Shiori Sumizome..."
+        "Segun su perfil parece algo problematica para controlar..."
+        "Solamente quiere crear arte, no le parece importar mucho la industria..."
 
-        "Estaria bien que tuviera ya un buen perfil, alguien que ya tenga cierta fama. (Ruka)":
-            play sound "audio/UI/Retro5.wav"
-            $ pts_ruka += 1
-            "Ruka... ¿Kurogane?"
-            "Parece algo... extraña, aunque sus numeros..."
-            "Tiene un buen perfil, no sera un problema que obtenga fans."
-
-        "Prefiero un perfil más reservado, alguien que requiera control absoluto. (Shiori)":
-            play sound "audio/UI/Retro5.wav"
-            $ pts_shiori += 1
-            "Shiori Sumizome..."
-            "Segun su perfil parece algo problematica para controlar..."
-            "Solamente quiere crear arte, no le parece importar mucho la industria..."
             
 
     mutou "Suficiente..."
