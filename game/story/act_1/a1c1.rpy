@@ -229,7 +229,6 @@ label a1c1:
     call screen angel_system_panel("Sumi")
     call screen angel_system_panel("Sumi")
     call screen angel_system_panel("Sumi")
-    with Pause(2.0)
     
     # Capturamos la decisión del backend
     $ decision_del_dia = _return

@@ -2,6 +2,7 @@
 define mutou = Character("Mutou", color="#787780")
 define yamada = Character("Yamada", color="#f95d5d")
 define ayame = Character("Ayame", color="#ff46cb")
+define sato = Character("Sato", color="#787780")
 
 define airi = Character("Airi", color="#7febfc")
 define ruka = Character("Ruka", color="#c551f3")
