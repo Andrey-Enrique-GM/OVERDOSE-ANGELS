@@ -32,7 +32,7 @@ label a1c3:
     menu:
         "Encenderle el cigarrillo.":
             play sound "audio/UI/Retro5.wav"
-            $ pts_uta += 1
+            $ pts_shiori += 1
             "Hago chasquear el encendedor, protegiendo la pequeña llama con la palma de mi mano."
             "Ella da un paso adelante, se inclina ligeramente y acerca la punta de su cigarrillo a la llama."
             "Durante un segundo, bajo la sombra de su gorra, alcanzo a notar la mirada penetrante de sus ojos."
