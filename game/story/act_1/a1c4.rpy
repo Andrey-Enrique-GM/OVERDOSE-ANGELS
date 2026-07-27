@@ -184,7 +184,7 @@ label a1c4:
 
     yamada "Te ves exhausto."
     yamada "Sabes, no hay nada mejor para el estrés de la tarde que un buen chocolate caliente."
-    yamada "Compré dos en la cafetería del primer piso. Ven, tómate un momento conmigo."
+    yamada "Comprare dos en la cafetería del primer piso. Ven, tómate un momento conmigo."
 
     # Aun no tengo fondo de una caferia
     scene zona_descanso with dissolve
@@ -193,7 +193,7 @@ label a1c4:
     "El vapor del chocolate caliente sube lentamente entre los dos."
     "Doy un pequeño sorbo; el dulzor resulta casi empalagoso, pero ayuda a asentarme el estómago."
 
-    show yamada_basic_happy at right with dissolve
+    show yamada_basic_happy
 
     yamada "Mmm... ¡delicioso! Justo lo que necesitaba después de la rabieta de esta tarde."
 
@@ -201,7 +201,7 @@ label a1c4:
     mutou "Sobre el sujeto de los comentarios de hoy..."
 
     hide yamada_basic_happy
-    show yamada_basic_smile at right
+    show yamada_basic_smile
 
     "El rostro de Yamada cambia sutilmente."
     "Ignora mi mención con una agilidad casi ensayada, tomando otro sorbo de su taza."
@@ -230,6 +230,16 @@ label a1c4:
     "Mañana será. Mañana empieza oficialmente el juego."
 
     scene black with fade
+
+
+
+    # Marcamos el logro como completado de forma permanente
+    $ persistent.act1_completed = True
+
+    # Notificación flotante en pantalla
+    $ renpy.notify("Logro desbloqueado: Acto 1 Completado")
+
+
 
     "Día 3 terminado."
 

@@ -32,7 +32,7 @@ label a1c3:
     menu:
         "Encenderle el cigarrillo.":
             play sound "audio/UI/Retro5.wav"
-            $ pts_kaori += 1
+            $ init_aff_kaori += 1
             "Hago chasquear el encendedor, protegiendo la pequeña llama con la palma de mi mano."
             "Ella da un paso adelante, se inclina ligeramente y acerca la punta de su cigarrillo a la llama."
             "Durante un segundo, bajo la sombra de su gorra, alcanzo a notar la mirada penetrante de sus ojos."
@@ -129,20 +129,20 @@ label a1c3:
     menu:
         "Invertir la mayor parte del presupuesto en la campaña publicitaria y marketing algorítmico.":
             play sound "audio/UI/Retro5.wav"
-            $ pts_airi += 1
+            $ init_aff_airi += 1
             "Si queremos números rápidos, la imagen lo es todo."
             "El algoritmo favorece la visibilidad agresiva sobre la sustancia."
             "Maximizar la presencia en redes desde el día uno."
 
         "Asignar los recursos a la producción musical y entrenamiento técnico.":
             play sound "audio/UI/Retro5.wav"
-            $ pts_kaori += 1
+            $ init_aff_kaori += 1
             "La fachada no durará si el producto de fondo es mediocre."
             "Es mejor construir una base artística sólida, aunque el crecimiento sea más lento al principio."
 
         "Priorizar la seguridad, moderación de comunidad y bienestar de las chicas.":
             play sound "audio/UI/Retro5.wav"
-            $ pts_ruka += 1
+            $ init_aff_ruka += 1
             "Conozco los riesgos de esta industria. Proteger el entorno del talento evitará crisis a largo plazo."
             "Minimizar la exposición tóxica antes de que el público empiece a consumir sus vidas."
 

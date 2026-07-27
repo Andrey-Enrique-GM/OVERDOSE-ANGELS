@@ -24,7 +24,7 @@ screen seleccion():
             hover_background Solid("#2b2b36") 
             
             hovered Play("sound", "audio/UI/Retro7.wav")
-            action [Play("sound", "audio/UI/Retro5.wav"), SetVariable("pts_airi", pts_airi + 1), Return("airi")]
+            action [Play("sound", "audio/UI/Retro5.wav"), SetVariable("init_aff_airi", init_aff_airi + 1), Return("airi")]
             
             vbox:
                 align (0.5, 0.0)
@@ -50,7 +50,7 @@ screen seleccion():
             hover_background Solid("#2b2b36")
             
             hovered Play("sound", "audio/UI/Retro7.wav")
-            action [Play("sound", "audio/UI/Retro5.wav"), SetVariable("pts_ruka", pts_ruka + 1), Return("ruka")]
+            action [Play("sound", "audio/UI/Retro5.wav"), SetVariable("init_aff_ruka", init_aff_ruka + 1), Return("ruka")]
             
             vbox:
                 align (0.5, 0.0)
@@ -75,7 +75,7 @@ screen seleccion():
             hover_background Solid("#2b2b36")
             
             hovered Play("sound", "audio/UI/Retro7.wav")
-            action [Play("sound", "audio/UI/Retro5.wav"), SetVariable("pts_kaori", pts_kaori + 1), Return("kaori")]
+            action [Play("sound", "audio/UI/Retro5.wav"), SetVariable("init_aff_kaori", init_aff_kaori + 1), Return("kaori")]
             
             vbox:
                 align (0.5, 0.0)
