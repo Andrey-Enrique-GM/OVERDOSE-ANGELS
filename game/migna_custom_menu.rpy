@@ -117,6 +117,22 @@ screen main_menu():
             else:
                 at btn_reposo
 
+        textbutton _("Música"):
+            action ShowMenu("music_room", mr=my_room)
+            hovered SetScreenVariable("boton_activo", "musica")
+            unhovered SetScreenVariable("boton_activo", None)
+            style "estilo_borde_hueco"
+            text_style "estilo_texto_glow"
+            hover_sound "audio/UI/Retro1.wav"
+            activate_sound "audio/UI/Retro8.wav"
+            
+            if boton_activo == "musica":
+                at btn_crece
+            elif boton_activo != None:
+                at btn_achica
+            else:
+                at btn_reposo
+
         textbutton _("Salir"):
             action Quit(confirm=not main_menu)
             hovered SetScreenVariable("boton_activo", "salir")
@@ -125,7 +141,7 @@ screen main_menu():
             text_style "estilo_texto_glow"
             hover_sound "audio/UI/Retro1.wav"
             activate_sound "audio/UI/Retro8.wav"
-            
+                        
             if boton_activo == "salir":
                 at btn_crece
             elif boton_activo != None:
