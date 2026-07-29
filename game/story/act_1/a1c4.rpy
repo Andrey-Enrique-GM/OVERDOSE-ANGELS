@@ -231,15 +231,13 @@ label a1c4:
 
     scene black with fade
 
-
-
+    """
     # Marcamos el logro como completado de forma permanente
     $ persistent.act1_completed = True
 
     # Notificación flotante en pantalla
     $ renpy.notify("Logro desbloqueado: Acto 1 Completado")
-
-
+    """
 
     "Día 3 terminado."
 

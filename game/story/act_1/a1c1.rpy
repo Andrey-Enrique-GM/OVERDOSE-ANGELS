@@ -226,9 +226,7 @@ label a1c1:
     mutou "Quizá haga unas tres pruebas para recordar cómo funciona esto..."
 
     # Invocamos la pantalla en la carpeta de screens
-    call screen angel_system_panel("Sumi")
-    call screen angel_system_panel("Sumi")
-    call screen angel_system_panel("Sumi")
+    call iniciar_angel_system(True)
     
     # Capturamos la decisión del backend
     $ decision_del_dia = _return

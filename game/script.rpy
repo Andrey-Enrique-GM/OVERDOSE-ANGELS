@@ -64,11 +64,5 @@ define gui.playtime_font = "gui/fonts/playtime.ttf"
 # Aqui empieza el juego
 label start:
 
-
-    # Si el jugador ya completó el Acto 1 anteriormente
-    if persistent.act1_completed:
-        $ renpy.notify("Acto 1 completado anteriormente")
-
-
     # Saltamos al Acto 1
     jump a1c1
