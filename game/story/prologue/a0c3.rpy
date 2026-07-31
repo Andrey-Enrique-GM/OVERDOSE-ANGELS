@@ -1,4 +1,4 @@
-label a1c3:
+label a0c3:
 
     # ------------------------------------------------------------------------------------------------------
     # --- ESCENA 1: Fumando ---
@@ -242,7 +242,7 @@ label a1c3:
     scene black
     with fade
 
-    "Día 2 terminado."
+    "Capítulo 3 terminado."
 
     # ------------------------------------------------------------------------------------------------------
     # --- PANTALLA DE LA CITA ---
@@ -260,4 +260,4 @@ label a1c3:
     window auto
     
     # Salto hacia el siguiente capitulo
-    jump a1c4
+    jump a0c4

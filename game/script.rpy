@@ -65,4 +65,4 @@ define gui.playtime_font = "gui/fonts/playtime.ttf"
 label start:
 
     # Saltamos al Acto 1
-    jump a1c1
+    jump a0c1

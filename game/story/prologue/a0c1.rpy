@@ -1,5 +1,7 @@
-label a1c1:
+label a0c1:
+
     play music "audio/bgm/BGLF.flac" loop fadein 1.5
+
     # ------------------------------------------------------------------------------------------------------
     # --- ESCENA 1: Flashback ---
     # ------------------------------------------------------------------------------------------------------
@@ -246,7 +248,7 @@ label a1c1:
 
     scene black with fade
 
-    "Día 0 terminado."
+    "Capítulo 1 terminado."
 
     # ------------------------------------------------------------------------------------------------------
     # --- PANTALLA DE LA CITA ---
@@ -270,4 +272,4 @@ label a1c1:
     window auto
 
     # Salto hacia el siguiente capitulo
-    jump a1c2
+    jump a0c2

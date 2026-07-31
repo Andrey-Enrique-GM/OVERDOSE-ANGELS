@@ -1,4 +1,4 @@
-label a1c4:
+label a0c4:
 
     # ------------------------------------------------------------------------------------------------------
     # --- ESCENA 1: La furia de Yamada ---
@@ -239,7 +239,7 @@ label a1c4:
     $ renpy.notify("Logro desbloqueado: Acto 1 Completado")
     """
 
-    "Día 3 terminado."
+    "Capítulo 4 terminado."
 
     # ------------------------------------------------------------------------------------------------------
     # --- PANTALLA DE LA CITA ---
@@ -257,4 +257,4 @@ label a1c4:
     window auto
     
     # Salto hacia el siguiente acto, el de Airi (provisional)
-    jump a2c1_airi
+    jump a1c1_airi

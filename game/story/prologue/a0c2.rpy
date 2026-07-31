@@ -1,4 +1,4 @@
-label a1c2:
+label a0c2:
 
     # ------------------------------------------------------------------------------------------------------
     # --- ESCENA 1: Presentación de los nuevos talentos ---
@@ -262,7 +262,7 @@ label a1c2:
     "La calma regresa a cuentagotas, pero el frío en mi pecho no se va."
 
     with Pause(2.0)
-    "Día 1 terminado."
+    "Capítulo 2 terminado."
 
     # ------------------------------------------------------------------------------------------------------
     # --- PANTALLA DE LA CITA ---
@@ -280,4 +280,4 @@ label a1c2:
     window auto
     
     # Salto hacia el siguiente capitulo
-    jump a1c3
+    jump a0c3
