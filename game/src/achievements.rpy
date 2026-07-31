@@ -1,1 +1,1 @@
-default persistent.act1_completed = False
+default persistent.prologue_completed = False

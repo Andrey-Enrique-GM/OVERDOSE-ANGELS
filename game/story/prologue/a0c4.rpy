@@ -231,14 +231,6 @@ label a0c4:
 
     scene black with fade
 
-    """
-    # Marcamos el logro como completado de forma permanente
-    $ persistent.act1_completed = True
-
-    # Notificación flotante en pantalla
-    $ renpy.notify("Logro desbloqueado: Acto 1 Completado")
-    """
-
     "Capítulo 4 terminado."
 
     # ------------------------------------------------------------------------------------------------------
@@ -256,5 +248,5 @@ label a0c4:
     with Pause(1.0)
     window auto
     
-    # Salto hacia el siguiente acto, el de Airi (provisional)
-    jump a1c1_airi
+    # Salto hacia el siguiente capitulo
+    jump a0c5
