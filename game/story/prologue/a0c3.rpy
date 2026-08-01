@@ -32,7 +32,7 @@ label a0c3:
     menu:
         "Encenderle el cigarrillo.":
             play sound "audio/UI/Retro5.wav"
-            $ init_aff_kaori += 1
+            $ init_aff_kaori += 2
             "Hago chasquear el encendedor, protegiendo la pequeña llama con la palma de mi mano."
             "Ella da un paso adelante, se inclina ligeramente y acerca la punta de su cigarrillo a la llama."
             "Durante un segundo, bajo la sombra de su gorra, alcanzo a notar la mirada penetrante de sus ojos."
@@ -41,6 +41,7 @@ label a0c3:
             mutou "No hay de qué."
 
         "Pasarle el encendedor para que ella misma lo haga.":
+            $ init_aff_kaori += 1
             play sound "audio/UI/Retro5.wav"
             "Le extiendo el encendedor de metal en la palma de mi mano."
             "Ella lo toma sin decir nada. Sus dedos rozan los míos por un instante; están fríos."

@@ -24,7 +24,7 @@ label a0c2:
 
     mutou "Mano de hierro... Entiendo."
 
-    hide yamada_basic_smile
+    hide yamada_basic_smile with dissolve
 
     "Abro la carpeta sobre el escritorio. Tres fotografías, tres nombres, tres vidas resumidas en hojas de datos estadísticos."
     "Tres chicas cuyos nombres apenas registro en este momento."
@@ -94,9 +94,26 @@ label a0c2:
     ruka "Bueno... mis amigos me dicen 'KuroRage'."
 
     "¿Sus amigos? Según su expediente, se refiere como 'amigos' a sus fans."
+    "Da igual, debería concentrarme en lo que importa: su potencial para el proyecto."
+    "Pero por ahora debería..."
 
-    mutou "Bueno... Ruka, fue un gusto conocerte."
-    mutou "Pero ahora mismo quisiera hablar con Yamada. A solas."
+    menu:
+        "Despedirme y seguir con mi trabajo.":
+            $ init_aff_ruka += 1
+            play sound "audio/UI/Retro5.wav"
+            mutou "Bueno... Ruka, fue un gusto conocerte."
+            mutou "Pero ahora mismo quisiera hablar con Yamada. A solas."
+
+        "Dejarla que siga.":
+            $ init_aff_ruka += 2
+            play sound "audio/UI/Retro5.wav"
+            hide yamada_basic_confused
+            show yamada_basic_happy at left
+            yamada "¿En serio? Que lindo apodo, 'KuroRage'."
+            yamada "Si no te molesta, Mutou y yo tenemos mucho trabajo que hacer, asi que..."
+            yamada "Agradeceria bastante si nos dejas solos."
+            hide yamada_basic_happy
+            show yamada_basic_confused at left
 
     hide ruka_basic_happy
     show ruka_basic_neutral at right
@@ -121,7 +138,7 @@ label a0c2:
     ruka "¡Genial!"
     ruka "Nos vemos, señorita Yamada... Mánager."
 
-    hide ruka_basic_happy
+    hide ruka_basic_happy with easeoutright
 
     "Con eso, finalmente se va y nos deja a solas de nuevo."
 
@@ -171,8 +188,6 @@ label a0c2:
     ayame "Mutou... sé que esta industria te vuelve loco."
     ayame "Sé que a veces sientes que solo destruimos cosas."
     ayame "Pero recuerda: el monstruo solo tiene el poder que tú le otorgues. Al final del día, cuando apagas el monitor, tú decides quién eres en la oscuridad."
-    
-    #hide ayame_basic_neutral with dissolve
     
     with Pause(0.5)
 

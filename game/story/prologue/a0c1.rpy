@@ -69,6 +69,7 @@ label a0c1:
             "Si, claro."
 
         "Mentir y decir que fue por dinero.":
+            $ estres += 1
             play sound "audio/UI/Retro5.wav"
             "¿En serio?"
             "¿Desde cuando es que miento si no es necesario?"
@@ -181,10 +182,33 @@ label a0c1:
     yamada "A todos les gustan las chicas lindas~"
     yamada "Es una pena terrible que ella no pueda estar presente ahora mismo, pero te aseguro que te caerá bien."
 
-    mutou "Entiendo. En otra oportunidad podré conocerla entonces..."
+    menu:
+        "Debe estar ocupada.":
+            $ init_aff_airi += 2
+            play sound "audio/UI/Retro5.wav"
+            mutou "Entiendo. En otra oportunidad podré conocerla entonces..."
+            yamada "Sí, así es..."
 
-    yamada "Sí, así es..."
-
+        "Que irresponsabilidad.":
+            $ init_aff_airi += 1
+            play sound "audio/UI/Retro5.wav"
+            mutou "Me parece que es una irresponsabilidad que no esté presente. ¿No crees?"
+            mutou "Debe ser muy importante para el proyecto, y no se toma la molestia de presentarse."
+            hide yamada_basic_smile
+            show yamada_basic_confused
+            yamada "No es que sea irresponsable... es solo que ella..."
+            yamada "Tiene un horario muy apretado, y no siempre puede estar disponible."
+            yamada "Pero te aseguro que es una gran chica, y que te caerá bien. Solo... dale tiempo."
+            yamada "Y comprende que ella no puede estar presente ahora mismo. No es su culpa."
+            "..."
+            "Tiene razón. No es su culpa."
+            "Así es como es la industria del entretenimiento. No hay tiempo para nada más que no sea trabajo."
+            mutou "Si, tienes razón. No es su culpa."
+            mutou "Lo siento por haberme alterado. No es mi intención faltarle el respeto a Airi Shirayuki."
+            hide yamada_basic_confused
+            show yamada_basic_smile
+            yamada "No te preocupes, Mutou. Estoy segura de que Airi entenderá."
+            
     hide yamada_basic_smile
     show yamada_basic_happy
 
@@ -194,8 +218,6 @@ label a0c1:
 
     yamada "Muy bien. Pasemos con una pequeña práctica solo para que recuerdes el uso de 'DokiWave OS'."
     yamada "Ahora siéntate e inicia sesión en la computadora."
-
-    hide yamada_basic_happy
 
     # ------------------------------------------------------------------------------------------------------
     # --- ESCENA 4: Tutorial ---
@@ -229,14 +251,9 @@ label a0c1:
 
     # Invocamos la pantalla en la carpeta de screens
     call iniciar_angel_system(True)
-    
-    # Capturamos la decisión del backend
-    $ decision_del_dia = _return
 
-    if decision_del_dia == "stream":
-        "..."
-    elif decision_del_dia == "descanso":
-        "..."
+    # Sonido de cerrado de sistema
+    play sound "audio/sfx/sys_off.wav"
 
     "Bueno, eso fue suficiente."
     "Vaya simulación... me trae recuerdos..."

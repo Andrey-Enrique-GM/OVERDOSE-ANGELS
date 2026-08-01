@@ -16,8 +16,8 @@ define unknown = Character("???", color="#787878")
 default dinero = 1000
 default estres = 0
 
-# Aqui se definen las variables de puntos de los personajes para manejar el flujo y final del acto 1
-# Esto servira como un multiplicador (bono) al empezar el acto 2
+# Aqui se definen las variables de puntos de los personajes para manejar el flujo y final del prologo
+# Esto servira como un multiplicador (bono) al empezar el acto 1
 default init_aff_airi = 0
 default init_aff_ruka = 0
 default init_aff_kaori = 0
