@@ -1,4 +1,4 @@
-﻿# Aqui se definen los personajes del juego, con sus nombres y colores de texto
+# Aqui se definen los personajes del juego, con sus nombres y colores de texto
 define mutou = Character("Mutou", color="#787878")
 define yamada = Character("Yamada", color="#f95d5d")
 define ayame = Character("Ayame", color="#ff46cb")
@@ -53,6 +53,9 @@ default agency_fame = 0
 default know_airi_secret = False
 default reveal_ruka_fear = False
 default made_promise_kaori = False
+
+# Logros y persistencia (Definidos en src/achievements.rpy)
+
 
 
 

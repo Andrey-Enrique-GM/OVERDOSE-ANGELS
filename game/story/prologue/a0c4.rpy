@@ -157,8 +157,29 @@ label a0c4:
     play sound "audio/sfx/heart_echo.wav"
 
     "El sonido de mi propia respiración agitada retumba en el habitáculo cerrado."
-    "Cierro los ojos, pero las imágenes se agolpan: el rostro del señor Sato, las sonrisas de Airi, Ruka y Uta en sus expedientes..."
+    "Cierro los ojos, pero las imágenes se agolpan: el rostro del señor Sato, las sonrisas de Airi, Ruka y Kaori en sus expedientes..."
     "Y la silueta en el suelo de aquella noche de lluvia."
+    "Las palabras del señor Sato retumban en mi cabeza... Si no hago algo, la historia volverá a repetirse."
+    "Mañana las veré a todas. ¿En cuál de ellas debería enfocar mi atención?"
+
+    menu:
+        "En Airi y la enorme presión sobre sus hombros.":
+            $ init_aff_airi += 1
+            play sound "audio/UI/Retro5.wav"
+            "Airi es la figura principal. La exigencia constante sobre ella podría terminar destruyéndola."
+
+        "En Ruka y la frágil máscara que proyecta.":
+            $ init_aff_ruka += 1
+            play sound "audio/UI/Retro5.wav"
+            "Ruka aparenta estar bien, pero esa necesidad constante de atención puede esconder un gran vacío."
+
+        "En Kaori y su actitud distante e inexpresiva.":
+            $ init_aff_kaori += 1
+            play sound "audio/UI/Retro5.wav"
+            "Kaori se aísla por completo de los demás. Ese muro defensivo indica que carga con un peso en silencio."
+
+    scene black with dissolve
+    
     "Pasan los minutos."
     "O tal vez horas."
     "Poco a poco, el dolor de cabeza se convierte en un latido sordo y distante. Obligo a mi cuerpo a recomponerse."
