@@ -86,7 +86,7 @@ label a0c5:
 
     "El evento público concluye sin contratiempos."
     "Nos trasladamos a un restaurante exclusivo a pocas calles de la agencia. Un comedor privado de iluminación cálida, maderas nobles y cristalería de lujo."
-    "Un lugar reservado únicamente para la élite de DokiWave y sus proyectos prioritarios."
+    "Un lugar reservado únicamente para la élite de DokiWave Entertainment y sus proyectos prioritarios."
     "Todas las chicas de Angels ya están sentadas en la mesa principal, conversando en voz baja entre ellas mientras los meseros sirven copas de vino caro."
 
     show yamada_basic_happy with dissolve
@@ -94,15 +94,17 @@ label a0c5:
     "Me acerco a la cabecera de la mesa donde Yamada revisa el itinerario de la cena."
 
     yamada "¡Mutou! Todo está saliendo a pedir de boca. Los directores están fascinados con el perfil de las chicas."
-    yamada "Si mantenemos este ritmo durante las próximas semanas, el presupuesto para la gira nacional del Acto 1 está completamente asegurado."
+    yamada "Si mantenemos este ritmo durante las próximas semanas, el presupuesto para los eventos y conciertos está completamente asegurado."
 
     mutou "El ambiente aquí arriba se siente abrumadoramente distinto al de los vestidores o las salas de ensayo..."
 
     hide yamada_basic_happy
     show yamada_basic_smile
 
-    yamada "Es el privilegio de estar en la cima, Mutou. En DokiWave, si juegas según las reglas y proteges la marca, las recompensas son ilimitadas."
+    yamada "Es el privilegio de estar en la cima, Mutou. En DokiWave Entertainment, si juegas según las reglas y proteges la marca, las recompensas son ilimitadas."
     yamada "Por eso es vital eliminar cualquier ruido innecesario a tiempo."
+
+    play sound "audio/sfx/heart_echo.wav"
 
     mutou "...¿Ruido innecesario?"
 
@@ -124,7 +126,7 @@ label a0c5:
     "Entro al baño del restaurante, me acerco al lavabo y abro el grifo para que el constante correr del agua disimule cualquier ruido."
     "Saco rápidamente mi teléfono celular del bolsillo interior del saco."
     "Mis dedos se mueven con torpe prisa sobre la pantalla de cristal."
-    "Tecleo en el buscador: 'Kenjiro Sato' 'DokiWave' 'Detención' 'Protesta'."
+    "Tecleo en el buscador: 'Kenjiro Sato' 'DokiWave' 'DokiWave Entertainment' 'Detención' 'Protesta'."
     "Nada. Cero resultados recientes. Ni informes policiales, ni arrestos, ni notas sobre un manifestante afuera de la agencia."
     "Borro los filtros y pruebo con términos más amplios de noticias locales de las últimas cuarenta y ocho horas."
     "Paso varios titulares irrelevantes sobre tráfico y política local, hasta que un pequeño artículo de una nota roja de vecindario llama mi atención:"
@@ -151,7 +153,7 @@ label a0c5:
     "Un mareo repentino y sofocante me obliga a sujetarme firmemente del borde del lavabo."
     "El sonido de la puerta del baño abriéndose me fuerza a guardar el teléfono de un tirón."
 
-    "Un ejecutivo de alto nivel de DokiWave entra al sanitario tarareando una melodía."
+    "Un ejecutivo de alto nivel de DokiWave Entertainment entra al sanitario tarareando una melodía."
     "Se detiene al notar mi rostro pálido y las gotas de sudor frío cayendo por mi frente."
 
     unknown "Vaya, Mutou... Te ves pésimo. ¿Estás bien? Estás blanco como un papel."
@@ -245,14 +247,16 @@ label a0c5:
     ruka "Por cierto, Mutou... estuve leyendo el anexo del contrato de medios que nos entregó Yamada. Decía algo sobre restringir mis transmisiones personales de videojuegos una vez que inicie la campaña."
     ruka "¿Eso es una orden definitiva de la agencia o es algo que puedo negociar contigo?"
 
-    mutou "En la etapa inicial, DokiWave busca un control absoluto sobre la narrativa de su marca. Quieren proyectar una imagen pulida y misteriosa de 'Angels', no la de una streamer improvisando en directo a altas horas de la noche."
+    mutou "En la etapa inicial, DokiWave Entertainment busca un control absoluto sobre la narrativa de su marca."
+    mutou "Quieren proyectar una imagen pulida y misteriosa de 'Angels', no la de una streamer improvisando en directo a altas horas de la noche."
 
     hide ruka_basic_neutral
     show ruka_basic_angry at left
 
     ruka "¡Pff! Mi audiencia creció precisamente porque soy transparente y directa. Si me convierten en una muñeca de porcelana ensayada, mis seguidores se darán cuenta de inmediato."
 
-    mutou "Y si expones demasiado de tu vida privada sin filtro, esta empresa usará esa misma transparencia en tu contra el día que cometas un tropiezo. Guarda una distancia, Ruka. Protege tu verdadero yo fuera de los reflectores."
+    mutou "Y si expones demasiado de tu vida privada sin filtro, esta empresa usará esa misma transparencia en tu contra el día que cometas un tropiezo."
+    mutou "Guarda una distancia, Ruka. Protege tu verdadero yo fuera de las cámaras."
 
     "Ruka se me queda viendo en silencio durante unos segundos, evaluando la frialdad de mis palabras."
 
@@ -272,7 +276,7 @@ label a0c5:
 
     "Sus ojos oscuros e incisivos se clavan directamente en los míos."
 
-    kaori "¿Cuánto dura el brillo de una idol en DokiWave antes de que la empresa decida reemplazarla?"
+    kaori "¿Cuánto dura el brillo de una idol en DokiWave Entertainment antes de que la empresa decida reemplazarla?"
 
     "La pregunta cae como una piedra en medio de la mesa. Airi y Ruka se quedan en silencio, mirando a Kaori con asombro."
 
@@ -282,17 +286,23 @@ label a0c5:
     "Un silencio denso se apodera de nuestro rincón de la mesa."
     "Siento una punzada agudísima detrás de mis ojos."
 
-    mutou "Dura el tiempo que ustedes sean capaces de no dejarse devorar por la maquinaria."
-    mutou "DokiWave les dará presupuesto, portadas y aplausos... pero a cambio querrá absorber cada aspecto de sus vidas. Si le entregan su alma por completo, el día que se agoten no quedará nada de ustedes que rescatar."
+    mutou "Mmm... bueno... dura lo que sea que dure su brillo, supongo..."
+
+    "No quiero contestar eso."
+
+    mutou "DokiWave Entertainment les dará presupuesto, portadas y aplausos... pero a cambio querrá absorber cada aspecto de sus vidas."
+    mutou "Si le entregan su alma por completo, el día que se agoten no quedará nada de ustedes que rescatar."
 
     "Kaori sostiene mi mirada sin pestañear. No hay miedo en sus ojos, solo una confirmación helada de sus propias sospechas."
 
     hide kaori_basic_neutral
     show kaori_basic_smile at right
 
-    kaori "Entiendo... Entonces habrá que aprender a no entregarlo todo."
+    kaori "Entiendo..."
+    kaori "Entonces tendremos que aprender a no entregarlo todo."
 
-    show yamada_basic_happy at left with dissolve
+    #show yamada_basic_happy at left with dissolve
+    show yamada_basic_happy at Position(xalign=-0.40, yalign=1.0) with dissolve
 
     yamada "¡Vaya, Mutou! ¡No me las asustes en su primera gran noche!"
     yamada "Chicas, no le hagan caso al tono melancólico de su mánager. ¡Este proyecto cuenta con el respaldo absoluto de la junta directiva! ¡Van a ser estrellas gigantescas!"
@@ -305,7 +315,9 @@ label a0c5:
 
     "Y entonces... el recuerdo inevitable e implacable me golpea la mente."
     "El día en que murió {i}Minami{/i}."
-    "La idol más grande que tuvo DokiWave. La cima de la industria. La chica que lo tenía todo según los titulares, hasta que la encontraron sin vida en aquella noche de lluvia helada."
+    "La idol más grande de DokiIdols, la más popular y grandiosa que tuvo DokiWave Entertainment."
+    "La cima de la industria."
+    "La chica que lo tenía todo según los titulares, hasta que la encontraron sin vida en aquella noche de lluvia helada."
     "Un asco profundo, viscoso y amargo me llena el pecho."
     "El verdadero rostro de esta empresa sigue siendo exactamente el mismo. Una maquinaria voraz que tritura personas y luego limpia la escena con una sonrisa corporativa."
 
@@ -316,6 +328,7 @@ label a0c5:
     hide ruka_basic_neutral
     hide airi_basic_neutral
     hide kaori_basic_smile
+    hide yamada_basic_happy
     with dissolve
 
     "La cena concluye gradualmente entre risas breves de los directivos, copas de vino refinado y platos caros devorados a medias."
@@ -341,7 +354,8 @@ label a0c5:
     "Hago chasquear el encendedor metálico."
     "La pequeña llama naranja ilumina la penumbra por un instante antes de prender el tabaco."
     "Doy una calada profunda, dejando que el humo amargo llene mis pulmones."
-    "Miro hacia la nada en medio de la noche iluminada por los deslumbrantes letreros de neón de la metrópoli."
+    "Miro hacia la nada en medio de la noche iluminada por los deslumbrantes letreros de neón de la ciudad."
+    "Las luces de neón de la ciudad danzan a lo lejos, mientras yo me quedo observando el humo ascender, girar y desvanecerse en la oscuridad." 
 
     scene black with fade
     
@@ -349,7 +363,7 @@ label a0c5:
     $ persistent.prologue_completed = True
 
     # Notificación flotante en pantalla
-    $ renpy.notify("Logro desbloqueado: Prologo Completado")
+    $ renpy.notify("Logro desbloqueado: Prólogo Completado")
     
     "Capítulo 5 terminado."
 
@@ -368,5 +382,5 @@ label a0c5:
     with Pause(1.0)
     window auto
     
-    # Salto hacia el siguiente acto, el de Airi (provisional)
-    jump a1c1_airi
+    # Salto hacia el camino (evaluador: road.rpy)
+    jump evalue_a0c5

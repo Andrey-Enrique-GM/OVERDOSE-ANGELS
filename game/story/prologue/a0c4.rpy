@@ -6,7 +6,7 @@ label a0c4:
 
     scene oficina with fade
 
-    "El ambiente en la oficina de DokiWave es tenso."
+    "El ambiente en la oficina de DokiWave Entertainment es tenso."
     "El constante tecleo furioso de Yamada rompe el silencio del lugar."
     "Tiene la mirada fija en el monitor, con los puños apretados."
 
@@ -23,7 +23,7 @@ label a0c4:
     show yamada_basic_confused
 
     yamada "Ah, Mutou..."
-    yamada "Es que... ese hombre de nuevo, no deja de publicar difamaciones sobre DokiWave en redes sociales."
+    yamada "Es que... ese hombre de nuevo, no deja de publicar difamaciones sobre DokiWave Entertainment en redes sociales."
     yamada "Está intentando tirar los foros oficiales del proyecto Angels."
     yamada "Dice que la empresa explota a las chicas, que destruimos vidas... ¡Puras mentiras para arruinar la imagen de la marca!"
 
@@ -50,7 +50,7 @@ label a0c4:
 
     "Los pasos de Yamada se alejan."
     "Me quedo solo frente a la pantalla. Leo uno de los comentarios antes de que el filtro automático lo borre:"
-    "'¡Devuélvanme a mi hija, asesinos! ¡DokiWave oculta la verdad!'"
+    "'¡Devuélvanme a mi hija, asesinos! ¡DokiWave Entertainment oculta la verdad!'"
 
     mutou "Su hija..."
 
@@ -99,17 +99,18 @@ label a0c4:
     
     "Sa... ¿Saori?"
     "Ese nombre retumba en mi memoria como un eco distante."
-    "Saori. Una de las idols más populares de DokiWave hace unos seis años."
+    "Saori. Una de las idols más populares del proyecto DokiIdols de DokiWave Entertainment hace unos seis años."
     "Famosa por su sonrisa genuina, su amabilidad con el personal y su carisma arrollador."
     "Sucedió un año antes del incidente de... ella."
     "La mayor estrella."
     "Cuando Saori murió, la noticia apenas duró dos días en los medios..."
-    "DokiWave lanzó un comunicado frío atribuyéndolo a 'complicaciones de salud preexistentes' y sofocó cualquier rumor."
+    "DokiWave Entertainment lanzó un comunicado frío atribuyéndolo a 'complicaciones de salud preexistentes' y sofocó cualquier rumor."
 
     sato "Ella no estaba enferma..."
     sato "Mi pequeña Saori... me llamaba llorando por las noches desde su dormitorio."
     sato "Me contaba cómo la hacían trabajar 18 horas seguidas, cómo la amenazaban con multas millonarias si no sonreía, cómo la aplastaban por dentro..."
-    sato "¡DokiWave la mató!"
+    sato "¡DokiWave Entertainment la mató!"
+    sato "¡La mataron!"
     sato "¡Se quitó la vida porque ya no podía más!"
 
     "Sato se pasa la mano temblorosa por el rostro, ahogando un sollozo."

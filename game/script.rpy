@@ -28,6 +28,12 @@ default aff_airi = 0
 default aff_ruka = 0
 default aff_kaori = 0
 
+# Aqui se definen las variables de puntos de cada personaje
+# Estos 'pts' seran acumulados en +1 por cada capitulo de su respectiva ruta que se juegue (logros)
+default pts_airi = 0
+default pts_ruka = 0
+default pts_kaori = 0
+
 # Salud mental (0 = Colapso / 100 = Estable)
 # Eventos especiales
 default mental_airi = 50
