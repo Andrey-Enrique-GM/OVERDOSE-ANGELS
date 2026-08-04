@@ -60,9 +60,6 @@ default know_airi_secret = False
 default reveal_ruka_fear = False
 default made_promise_kaori = False
 
-# Logros y persistencia (Definidos en src/achievements.rpy)
-
-
 
 
 # Aqui se define la fuente que se usará en el juego

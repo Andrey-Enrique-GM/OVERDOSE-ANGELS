@@ -57,7 +57,9 @@ label aplicar_accion_angel(personaje, accion):
             elif accion == "practicar":
                 fans_airi += 100
                 stress_airi += 10
+                mental_airi += 10
             elif accion == "descansar":
+                fans_airi += 20
                 stress_airi = max(0, stress_airi - 30)
                 mental_airi = min(100, mental_airi + 20)
                 
@@ -69,7 +71,9 @@ label aplicar_accion_angel(personaje, accion):
             elif accion == "practicar":
                 fans_ruka += 100
                 stress_ruka += 10
+                mental_ruka += 10
             elif accion == "descansar":
+                fans_ruka += 20
                 stress_ruka = max(0, stress_ruka - 30)
                 mental_ruka = min(100, mental_ruka + 20)
                 
@@ -81,7 +85,9 @@ label aplicar_accion_angel(personaje, accion):
             elif accion == "practicar":
                 fans_kaori += 100
                 stress_kaori += 10
+                mental_kaori += 10
             elif accion == "descansar":
+                fans_kaori += 20
                 stress_kaori = max(0, stress_kaori - 30)
                 mental_kaori = min(100, mental_kaori + 20)
     
@@ -104,7 +110,7 @@ screen angel_system_selection(turnos):
     add "images/bgs/computadora.png" # Fondo de sistema
     add Solid("#000000B3") # Filtro oscuro
 
-    # Variable local para detectar a quien esta haciendo hover
+    # Variable local para detectar sobre quien esta el cursor
     default char_hover = None
 
     text "ANGEL SYSTEM - v2.3.2" xalign 0.5 ypos 30 size 40 color "#00ffcc" bold True
@@ -145,7 +151,7 @@ screen angel_system_selection(turnos):
                             text "Estrés" size 14 xalign 0.5
                             bar value stress_airi range 100 style "bar_stress"
                 else:
-                    text "Fachada perfecta, lista para empezar a trabajar." text_align 0.5 size 20 idle_color "#cccccc"
+                    text "Idol" text_align 0.5 size 20 idle_color "#cccccc" at center
 
         # --- Columna 2: Ruka ---
         button:
@@ -176,7 +182,7 @@ screen angel_system_selection(turnos):
                             text "Estrés" size 14 xalign 0.5
                             bar value stress_ruka range 100 style "bar_stress"
                 else:
-                    text "Buen perfil, alguien que ya tiene cierta fama." text_align 0.5 size 20 idle_color "#cccccc"
+                    text "Streamer de videojuegos" text_align 0.5 size 20 idle_color "#cccccc" at center
 
         # --- Columna 3: Kaori ---
         button:
@@ -207,7 +213,7 @@ screen angel_system_selection(turnos):
                             text "Estrés" size 14 xalign 0.5
                             bar value stress_kaori range 100 style "bar_stress"
                 else:
-                    text "Perfil reservado, requiere control absoluto." text_align 0.5 size 20 idle_color "#cccccc"
+                    text "Compositora" text_align 0.5 size 20 idle_color "#cccccc" at center
 
 
 
@@ -219,7 +225,7 @@ screen angel_system_action(personaje):
     add "images/bgs/computadora.png"
     add Solid("#000000E6") # Fondo oscuro
 
-    # Extrae las variables segun quien eligio
+    # Extrae las variables segun el personaje elegido
     python:
         if personaje == "airi":
             p_nombre = "Airi"
@@ -270,7 +276,7 @@ screen angel_system_action(personaje):
             null height 30 # Espaciador
 
             # BOTONES DE ACCION
-            # Si 'estres' esta a 100, no puede trabajar ni practicar, se inhabilitan
+            # Si el estres esta al maximo o la salud mental es muy baja, se inhabilitan ciertas acciones
             
             textbutton "Trabajar":
                 style "angel_sys_button"
