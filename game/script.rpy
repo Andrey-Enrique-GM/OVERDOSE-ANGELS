@@ -67,6 +67,11 @@ define gui.playtime_font = "gui/fonts/playtime.ttf"
 
 
 
+# Aqui se definen la transicion rapida para el cambio de sprite
+define qdissolve = Dissolve(0.25)
+
+
+
 # Aqui empieza el juego
 label start:
 

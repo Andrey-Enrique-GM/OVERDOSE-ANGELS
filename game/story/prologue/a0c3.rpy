@@ -59,6 +59,7 @@ label a0c3:
 
     hide kaori_basic_neutral
     show kaori_basic_happy
+    with qdissolve
 
     "Ella suelta una pequeña risa amarga que se pierde en una nube de humo."
 
@@ -70,7 +71,7 @@ label a0c3:
 
     mutou "...?"
 
-    hide kaori_basic_happy with dissolve
+    hide kaori_basic_happy with easeoutleft
 
     "Antes de que pueda preguntarle cómo sabe quién soy, la mujer se da la vuelta y camina a paso rápido hacia la salida del callejón, desapareciendo tras la esquina."
     "Me quedo solo, sosteniendo mi cigarrillo a medio consumir."
@@ -187,6 +188,7 @@ label a0c3:
 
     hide kaori_basic_neutral
     show kaori_basic_confused at right
+    with qdissolve
 
     "Kaori se queda helada al verme. Sus ojos se abren levemente por la sorpresa al conectar las piezas."
     "El hombre con el traje arrugado y el encendedor en el callejón de basura es su posible nuevo mánager."
@@ -200,6 +202,7 @@ label a0c3:
 
     hide kaori_basic_confused
     show kaori_basic_neutral at right
+    with qdissolve
 
     yamada "¿Eh? ¿Pasa algo? Se quedaron mirándose muy raro..."
 
@@ -220,12 +223,13 @@ label a0c3:
     kaori "Lo siento... tengo que responder esto. Es de... Lo siento."
     kaori "Con su permiso."
 
-    hide kaori_basic_neutral with dissolve
+    hide kaori_basic_neutral with easeoutright
 
     "Kaori da media vuelta y sale de la oficina a prisa mientras contesta la llamada."
 
     hide yamada_basic_happy
     show yamada_basic_smile at left
+    with qdissolve
 
     yamada "Vaya... siempre está tan ocupada."
     yamada "Pero tiene un potencial enorme, ¿no crees?"

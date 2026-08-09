@@ -21,6 +21,7 @@ label a0c4:
 
     hide yamada_basic_angry
     show yamada_basic_confused
+    with qdissolve
 
     yamada "Ah, Mutou..."
     yamada "Es que... ese hombre de nuevo, no deja de publicar difamaciones sobre DokiWave Entertainment en redes sociales."
@@ -39,6 +40,7 @@ label a0c4:
 
     hide yamada_basic_confused
     show yamada_basic_smile
+    with qdissolve
 
     yamada "Pero... el reporte para la directiva..."
 
@@ -203,6 +205,7 @@ label a0c4:
 
     hide yamada_basic_happy
     show yamada_basic_smile
+    with qdissolve
 
     yamada "Te ves exhausto."
     yamada "Sabes, no hay nada mejor para el estrés de la tarde que un buen chocolate caliente."
@@ -215,7 +218,7 @@ label a0c4:
     "El vapor del chocolate caliente sube lentamente entre los dos."
     "Doy un pequeño sorbo; el dulzor resulta casi empalagoso, pero ayuda a asentarme el estómago."
 
-    show yamada_basic_happy
+    show yamada_basic_happy with dissolve
 
     yamada "Mmm... ¡delicioso! Justo lo que necesitaba después de la rabieta de esta tarde."
 
@@ -224,6 +227,7 @@ label a0c4:
 
     hide yamada_basic_happy
     show yamada_basic_smile
+    with qdissolve
 
     "El rostro de Yamada cambia sutilmente."
     "Ignora mi mención con una agilidad casi ensayada, tomando otro sorbo de su taza."

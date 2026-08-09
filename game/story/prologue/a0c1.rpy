@@ -42,6 +42,7 @@ label a0c1:
     
     hide yamada_basic_happy
     show yamada_basic_smile
+    with qdissolve
     
     "Le hago una seña con la mano para que guarde silencio. No me gusta que mencionen el pasado."
     "Mucho menos ese nombre..."
@@ -120,8 +121,6 @@ label a0c1:
 
     mutou "Carajo..."
 
-    hide yamada_basic_smile
-
     scene black with fade
 
     "Después de unos minutos que se sintieron como horas, Yamada terminó de hablar de la imagen de la marca Angels."
@@ -147,6 +146,7 @@ label a0c1:
 
     hide yamada_basic_happy
     show yamada_basic_confused
+    with qdissolve
 
     yamada "Eh..."
     yamada "Tal parece que ahora mismo no está... disponible."
@@ -159,6 +159,7 @@ label a0c1:
 
     hide yamada_basic_confused
     show yamada_basic_smile
+    with qdissolve
 
     yamada "Pero no estamos para hablar de eso. Ella es Airi, Airi Shirayuki."
     yamada "¿Te suena?"
@@ -167,11 +168,13 @@ label a0c1:
 
     hide yamada_basic_smile
     show yamada_basic_confused
+    with qdissolve
 
     yamada "Oh..."
 
     hide yamada_basic_confused
     show yamada_basic_smile
+    with qdissolve
 
     yamada "Bueno, Airi es una gran promesa para el proyecto Angels. Seguro ella podría ser la nueva gran estrella."
 
@@ -196,6 +199,7 @@ label a0c1:
             mutou "Debe ser muy importante para el proyecto, y no se toma la molestia de presentarse."
             hide yamada_basic_smile
             show yamada_basic_confused
+            with qdissolve
             yamada "No es que sea irresponsable... es solo que ella..."
             yamada "Tiene un horario muy apretado, y no siempre puede estar disponible."
             yamada "Pero te aseguro que es una gran chica, y que te caerá bien. Solo... dale tiempo."
@@ -207,10 +211,12 @@ label a0c1:
             mutou "Lo siento por haberme alterado. No es mi intención faltarle el respeto a Airi Shirayuki."
             hide yamada_basic_confused
             show yamada_basic_smile
+            with qdissolve
             yamada "No te preocupes, Mutou. Estoy segura de que Airi entenderá."
             
     hide yamada_basic_smile
     show yamada_basic_happy
+    with qdissolve
 
     yamada "Puedes llevarte la carpeta contigo, tiene bastantes datos que podrían interesarte."
 

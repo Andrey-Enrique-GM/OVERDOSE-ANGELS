@@ -18,6 +18,7 @@ label a0c2:
 
     hide yamada_basic_happy
     show yamada_basic_smile
+    with qdissolve
 
     yamada "Son tres chicas en total. Las llaman el 'Angels Proyect'."
     yamada "El director dice que tienen un potencial masivo para el algoritmo actual, pero necesitan un mánager con mano de hierro para moldearlas."
@@ -61,14 +62,17 @@ label a0c2:
 
     hide ruka_basic_neutral
     show ruka_basic_happy at right
+    with qdissolve
     hide yamada_basic_confused
     show yamada_basic_happy at left
+    with qdissolve
 
     yamada "Ella es Ruka Kurogane. Quizá alcanzaste a darle un vistazo a su perfil."
     yamada "Tiene una gran trayectoria construida por su cuenta. Ella es..."
 
     hide yamada_basic_happy
     show yamada_basic_confused at left
+    with qdissolve
 
     ruka "Soy streamer. Bueno, quizá no como las chicas con las que tú sueles trabajar..."
 
@@ -76,11 +80,13 @@ label a0c2:
 
     hide ruka_basic_happy
     show ruka_basic_neutral at right
+    with qdissolve
 
     ruka "Yo hago streams de videojuegos, no me grabo maquillándome o haciendo ASMR o... bueno..."
 
     hide ruka_basic_neutral
     show ruka_basic_angry at right
+    with qdissolve
 
     ruka "Tuve una etapa."
 
@@ -89,6 +95,7 @@ label a0c2:
 
     hide ruka_basic_angry
     show ruka_basic_happy at right
+    with qdissolve
 
     ruka "Pero eso no importa, ahora soy una nueva Ruka Kurogane."
     ruka "Bueno... mis amigos me dicen 'KuroRage'."
@@ -109,6 +116,7 @@ label a0c2:
             play sound "audio/UI/Retro5.wav"
             hide yamada_basic_confused
             show yamada_basic_happy at left
+            with qdissolve
             yamada "¿En serio? Que lindo apodo, 'KuroRage'."
             yamada "Si no te molesta, Mutou y yo tenemos mucho trabajo que hacer, asi que..."
             yamada "Agradeceria bastante si nos dejas solos."
@@ -117,6 +125,7 @@ label a0c2:
 
     hide ruka_basic_happy
     show ruka_basic_neutral at right
+    with qdissolve
 
     yamada "Oh... no sabía que tenían ese tipo de relación..."
 
@@ -128,12 +137,14 @@ label a0c2:
 
     hide yamada_basic_confused
     show yamada_basic_happy at left
+    with qdissolve
 
     yamada "Puedes tomarte el resto del día libre."
     yamada "Siéntete libre de jugar videojuegos con tus amigos."
 
     hide ruka_basic_neutral
     show ruka_basic_happy at right
+    with qdissolve
 
     ruka "¡Genial!"
     ruka "Nos vemos, señorita Yamada... Mánager."
@@ -182,8 +193,6 @@ label a0c2:
     "Recuerdo el piso 3. El frío de la barandilla de metal en la zona de fumadores."
     "El humo del cigarrillo flotando en el aire de la noche, disipándose lentamente bajo la luna."
     "Ayame estaba a mi lado, mirando el horizonte de la ciudad con esos ojos cansados pero extrañamente pacíficos."
-    
-    show ayame_basic_neutral with dissolve
     
     ayame "Mutou... sé que esta industria te vuelve loco."
     ayame "Sé que a veces sientes que solo destruimos cosas."

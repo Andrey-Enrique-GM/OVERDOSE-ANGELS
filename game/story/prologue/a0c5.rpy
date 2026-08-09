@@ -25,6 +25,7 @@ label a0c5:
 
     hide yamada_basic_happy
     show yamada_basic_smile
+    with qdissolve
 
     yamada "¡Ah, Mutou! Qué bueno que te acercas."
     yamada "Estaba mostrándole a la directiva los reportes de interacción en tiempo real del evento de hoy."
@@ -39,6 +40,7 @@ label a0c5:
 
     hide yamada_basic_smile
     show yamada_basic_happy
+    with qdissolve
 
     "Yamada no pestañea. Su sonrisa no flaquea ni un solo milímetro; al contrario, se vuelve extrañamente más brillante y relajada."
 
@@ -52,6 +54,7 @@ label a0c5:
 
     hide yamada_basic_happy
     show yamada_basic_confused
+    with qdissolve
 
     yamada "...¿Programadores?"
 
@@ -61,6 +64,7 @@ label a0c5:
 
     hide yamada_basic_confused
     show yamada_basic_smile
+    with qdissolve
 
     "El desconcierto de Yamada dura solo una fracción de segundo antes de disolverse en esa misma serenidad inquebrantable."
 
@@ -100,6 +104,7 @@ label a0c5:
 
     hide yamada_basic_happy
     show yamada_basic_smile
+    with qdissolve
 
     yamada "Es el privilegio de estar en la cima, Mutou. En DokiWave Entertainment, si juegas según las reglas y proteges la marca, las recompensas son ilimitadas."
     yamada "Por eso es vital eliminar cualquier ruido innecesario a tiempo."
@@ -204,6 +209,7 @@ label a0c5:
 
     hide airi_basic_smile
     show airi_basic_happy at center
+    with qdissolve
 
     airi "Mánager... estuviste viendo la presentación del vestíbulo completa, ¿verdad? ¿Qué tal se vio desde afuera?"
     airi "Siento que en el tercer bloque de baile dudé un segundo en la transición del centro... ¿Se notó mucho?"
@@ -212,6 +218,7 @@ label a0c5:
 
     hide airi_basic_happy
     show airi_basic_neutral at center
+    with qdissolve
 
     airi "Es que... los directivos principales estaban en primera fila. Yamada me dijo que la primera impresión lo es todo para el algoritmo de recomendación."
     airi "Si fallo ahora que me asignaron la posición central..."
@@ -222,6 +229,7 @@ label a0c5:
 
     hide airi_basic_neutral
     show airi_basic_smile at center
+    with qdissolve
 
     airi "Entiendo... Gracias, Mutou. Tendré más cuidado en el ensayo de mañana."
 
@@ -229,11 +237,13 @@ label a0c5:
 
     hide ruka_basic_neutral
     show ruka_basic_smile at left
+    with qdissolve
 
     ruka "Oye, oye, mánager. No seas tan severo en nuestra primera cena de celebración. Aunque... hay que admitir que Airi se veía un poco tiesa saludando a los patrocinadores VIP."
 
     hide airi_basic_smile
     show airi_basic_neutral at center
+    with qdissolve
 
     airi "¡Ruka! No estaba tiesa..."
 
@@ -241,8 +251,11 @@ label a0c5:
 
     "Ruka vuelve su mirada hacia mí, dejando entrever una duda que la ha estado inquietando."
 
+    hide airi_basic_neutral
+    show airi_basic_smile at center
     hide ruka_basic_smile
     show ruka_basic_neutral at left
+    with qdissolve
 
     ruka "Por cierto, Mutou... estuve leyendo el anexo del contrato de medios que nos entregó Yamada. Decía algo sobre restringir mis transmisiones personales de videojuegos una vez que inicie la campaña."
     ruka "¿Eso es una orden definitiva de la agencia o es algo que puedo negociar contigo?"
@@ -252,6 +265,7 @@ label a0c5:
 
     hide ruka_basic_neutral
     show ruka_basic_angry at left
+    with qdissolve
 
     ruka "¡Pff! Mi audiencia creció precisamente porque soy transparente y directa. Si me convierten en una muñeca de porcelana ensayada, mis seguidores se darán cuenta de inmediato."
 
@@ -262,6 +276,7 @@ label a0c5:
 
     hide ruka_basic_angry
     show ruka_basic_neutral at left
+    with qdissolve
 
     ruka "Vaya... Te ves bastante serio hoy, mánager. O la comida fina te cayó mal, o de verdad te preocupa que metamos la pata."
 
@@ -273,6 +288,7 @@ label a0c5:
 
     hide kaori_basic_neutral
     show kaori_basic_neutral at right
+    with qdissolve
 
     "Sus ojos oscuros e incisivos se clavan directamente en los míos."
 
@@ -297,6 +313,7 @@ label a0c5:
 
     hide kaori_basic_neutral
     show kaori_basic_smile at right
+    with qdissolve
 
     kaori "Entiendo..."
     kaori "Entonces tendremos que aprender a no entregarlo todo."
@@ -326,7 +343,7 @@ label a0c5:
     # ------------------------------------------------------------------------------------------------------
 
     hide ruka_basic_neutral
-    hide airi_basic_neutral
+    hide airi_basic_smile
     hide kaori_basic_smile
     hide yamada_basic_happy
     with dissolve
@@ -342,7 +359,8 @@ label a0c5:
     mutou "No gracias, Yamada. Voy a salir a tomar un poco de aire primero."
 
     hide yamada_basic_happy
-    show yamada_basic_confused with Pause(0.3)
+    show yamada_basic_confused
+    with qdissolve
 
     # Falta el fondooo
     # scene calle_noche with fade
