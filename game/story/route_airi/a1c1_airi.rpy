@@ -1,5 +1,9 @@
 label a1c1_airi:
 
+    # Marcamos el logro como completado de forma permanente
+    $ persistent.airi_route_init = True
+    $ renpy.notify("Logro desbloqueado: Airi Shirayuki")
+
     # ------------------------------------------------------------------------------------------------------
     # --- ESCENA 1: Sombras bajo la sonrisa ---
     # ------------------------------------------------------------------------------------------------------
@@ -25,6 +29,7 @@ label a1c1_airi:
 
     hide airi_basic_happy
     show airi_basic_smile
+    with qdissolve
 
     airi "¡Súper rica! Aunque los señores de la junta directiva hablan horriblemente aburrido..."
     airi "Todo el tiempo hablando de 'proyecciones trimestrales', 'retención de usuarios' y 'conversión de audiencias'."
@@ -39,6 +44,7 @@ label a1c1_airi:
 
     hide airi_basic_smile
     show airi_basic_surprised
+    with qdissolve
 
     "Su mirada, antes chispeante y llena de vida, pierde el foco por completo. Se vuelve extrañamente distante, perdida en la inmensidad vacía de la ciudad."
     "Sus hombros caen un par de centímetros."
@@ -57,6 +63,7 @@ label a1c1_airi:
 
     hide airi_basic_surprised
     show airi_basic_smile
+    with qdissolve
 
     "Airi contempla sus propias manos apoyadas en el metal frío, abriendo y cerrando los dedos despacio, como si los estuviera descubriendo por primera vez."
 
@@ -95,6 +102,7 @@ label a1c1_airi:
 
     hide airi_basic_smile
     show airi_basic_happy
+    with qdissolve
 
     "Como si alguien hubiera accionado un interruptor interno en su cerebro, la mirada distante de Airi desaparece en una fracción de segundo."
     "La frialdad en sus ojos se evapora y su amplia y radiante sonrisa regresa como si nada hubiera pasado."
@@ -111,6 +119,7 @@ label a1c1_airi:
 
     hide airi_basic_happy
     show airi_basic_smile
+    with qdissolve
 
     "Airi se queda congelada por un instante imperceptible al escuchar la gravedad en mi voz."
 
@@ -191,18 +200,18 @@ label a1c1_airi:
     "Abro los ojos de golpe en medio de la penumbra."
     "Un nudo de rabia amarga se aprieta en mi garganta."
 
-    mutou "Hijos de puta..."
+    mutou "Hijos de perra..."
 
     "La directiva lo sabe. Yamada lo sabe. Todos en esa maldita agencia saben que Airi se está rompiendo por dentro."
     "Y no solo no les importa, sino que diseñaron su estrategia de marketing alrededor de su inestabilidad."
-    "Para DokiWave, una chica rota es más fácil de controlar, más frágil y más rentable."
+    "Para DokiWave Entertainment, una chica rota es más fácil de controlar, más frágil y más rentable."
     "Es exactamente el mismo patrón..."
     "El mismo juego despiadado que destruyó la vida de Saori Sato... y el que llevó al abismo a Minami."
 
     "Aprieto las sábanas con la mano en la oscuridad."
     "Esta vez soy yo quien está a cargo."
     "No soy el mismo mánager ingenuo de hace cinco años. Conozco las entrañas sucias de esta empresa y sé cómo juegan."
-    "Si Airi se está fracturando, no dejaré que DokiWave termine de romperla."
+    "Si Airi se está fracturando, no dejaré que DokiWave Entertainment termine de romperla."
 
     "Con la cabeza pesada y esa determinación amarga grabada a fuego en el pecho, finalmente cierro los ojos y me dejo llevar por el sueño."
 
@@ -215,7 +224,8 @@ label a1c1_airi:
     with Pause(1.5)
     window hide
 
-    show text "{i}\"La mente humana a veces fractura su propia realidad para sobrevivir al dolor de existir.\"{/i}" at truecenter with dissolve
+    # Cita sobre la verdad, el silencio y la tragedia
+    show text "{i}\"No hay hombres malvados, sino hombres infelices.\"{/i}\n\n-- León Tolstói." at truecenter with dissolve
     $ renpy.pause()
 
     hide text with dissolve
