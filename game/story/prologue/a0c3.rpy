@@ -18,7 +18,7 @@ label a0c3:
 
     "El sonido de unos pasos ligeros rompe mi monólogo interno."
 
-    show kaori_basic_neutral
+    show kaori_basic_smile
 
     "Miro de reojo. Una mujer se acerca caminando a paso lento. Lleva una bufanda grande que le cubre parte del rostro y una gorra calada hasta las cejas."
     "Se detiene a un par de metros de mí, buscando algo en sus bolsillos."
@@ -49,6 +49,10 @@ label a0c3:
             unknown "Gracias."
             mutou "..."
 
+    hide kaori_basic_smile
+    show kaori_basic_smile_cigarette
+    with qdissolve
+
     "Ambos nos quedamos de pie en la sombra del edificio, fumando en absoluto silencio."
     "El único sonido entre nosotros es el chisporroteo del tabaco al consumirse."
     "No hay necesidad de charla vacía. Es un acuerdo tácito entre dos personas que solo buscan un momento de anestesia."
@@ -56,10 +60,6 @@ label a0c3:
     unknown "El aire aquí huele a humedad..."
     
     mutou "Es el mejor lugar del edificio. Nadie molesta."
-
-    hide kaori_basic_neutral
-    show kaori_basic_happy
-    with qdissolve
 
     "Ella suelta una pequeña risa amarga que se pierde en una nube de humo."
 
@@ -71,7 +71,7 @@ label a0c3:
 
     mutou "...?"
 
-    hide kaori_basic_happy with easeoutleft
+    hide kaori_basic_smile_cigarette with easeoutleft
 
     "Antes de que pueda preguntarle cómo sabe quién soy, la mujer se da la vuelta y camina a paso rápido hacia la salida del callejón, desapareciendo tras la esquina."
     "Me quedo solo, sosteniendo mi cigarrillo a medio consumir."

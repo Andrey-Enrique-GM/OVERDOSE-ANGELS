@@ -199,7 +199,7 @@ label a0c5:
 
     show ruka_basic_neutral at left with dissolve
     show airi_basic_smile at center with dissolve
-    show kaori_basic_neutral at right with dissolve
+    show kaori_basic_smile at right with dissolve
 
     "Ruka, Airi, Kaori... todas vestidas con ropa elegante pero juvenil, observándome con expresiones que van desde la curiosidad hasta la cautela."
 
@@ -286,8 +286,8 @@ label a0c5:
 
     kaori "Mánager..."
 
-    hide kaori_basic_neutral
-    show kaori_basic_neutral at right
+    hide kaori_basic_smile
+    show kaori_basic_curious at right
     with qdissolve
 
     "Sus ojos oscuros e incisivos se clavan directamente en los míos."
@@ -311,7 +311,7 @@ label a0c5:
 
     "Kaori sostiene mi mirada sin pestañear. No hay miedo en sus ojos, solo una confirmación helada de sus propias sospechas."
 
-    hide kaori_basic_neutral
+    hide kaori_basic_curious
     show kaori_basic_smile at right
     with qdissolve
 
